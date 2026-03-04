@@ -1,14 +1,726 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escova Alisadora 3 em 1 | Cabelo Liso e Brilhante em Minutos</title>
-    <meta name="description" content="Alise, modele e dê vida aos seus fios em minutos com a Escova Alisadora 3 em 1. Pague só na entrega, frete grátis e 7 dias de garantia!">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escova Alisadora 3 em 1 | Liso Perfeito em Minutos</title>
+  <meta name="description"
+    content="Alise, modele e dê brilho aos seus fios em minutos. Pague só na entrega, frete grátis e 7 dias de garantia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- BG GLOW -->
+  <div class="bg-glow">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════ HERO ══ -->
+  <section class="hero section-pad" id="inicio">
+    <div class="container">
+
+      <!-- TRUST BADGES TOPO -->
+      <div class="trust-strip reveal">
+        <span class="trust-badge badge-delivery">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="1" y="3" width="15" height="13" />
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
+            <circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+          Pague na Entrega
+        </span>
+        <span class="trust-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+          Frete Grátis
+        </span>
+        <span class="trust-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          7 Dias de Garantia
+        </span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="reveal">
+            <span class="pill-tag">✦ Tecnologia PTC Avançada</span>
+            <h1>Diga Adeus ao Frizz.<br><span class="gradient-text">Liso Perfeito em Minutos.</span></h1>
+            <p class="hero-subtitle">Desembaraça, modela e alisa na mesma passada — sem queimar, sem fumaça, sem mecha
+              por mecha.</p>
+          </div>
+
+          <div class="hero-price-box reveal" data-delay="100">
+            <div class="price-badge-delivery">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+              Pague só quando receber em casa
+            </div>
+            <div class="price-from">De <s>R$ 197,00</s></div>
+            <div class="price-main">R$ <span class="price-number">97</span><span class="price-cents">,00</span></div>
+            <div class="price-save">🎉 Você economiza R$ 100,00</div>
+          </div>
+
+          <div class="hero-ctas reveal" data-delay="200">
+            <a href="#precos" class="btn-primary">
+              PEDIR AGORA
+              <span class="btn-sub">Pague só na entrega</span>
+            </a>
+          </div>
+
+          <div class="live-visitors reveal" data-delay="300">
+            <span class="pulse-dot"></span>
+            <span id="visitor-count">42</span> pessoas vendo esta oferta agora
+          </div>
+        </div>
+
+        <div class="hero-media reveal" data-delay="150">
+          <!-- Substitua pelo seu vídeo real -->
+          <div class="video-wrapper">
+            <img src="https://picsum.photos/seed/escova/800/600" alt="Escova Alisadora 3 em 1" class="hero-img" />
+            <div class="play-button">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+            <div class="video-label">▶ Assista ao vídeo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ DORES ══ -->
+  <section class="section-alt section-pad" id="dores">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Você se identifica?</h2>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card reveal">
+          <div class="pain-icon">✗</div>
+          <p>Perde horas alisando mecha por mecha e o resultado dura pouco</p>
+        </div>
+        <div class="pain-card reveal" data-delay="100">
+          <div class="pain-icon">✗</div>
+          <p>Tem medo de queimar os fios com chapinhas agressivas</p>
+        </div>
+        <div class="pain-card reveal" data-delay="150">
+          <div class="pain-icon">✗</div>
+          <p>Frustrada com o frizz que não desaparece de jeito nenhum</p>
+        </div>
+        <div class="pain-card reveal" data-delay="200">
+          <div class="pain-icon">✗</div>
+          <p>Gasta uma fortuna no salão e em produtos que não funcionam</p>
+        </div>
+      </div>
+      <div class="pain-solution reveal">
+        <p>Se você se viu em qualquer um desses pontos, a <strong class="gradient-text">Escova Alisadora 3 em 1</strong>
+          foi feita para você.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ PRODUTO ══ -->
+  <section class="section-pad" id="produto">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Conheça a Escova Alisadora 3 em 1</h2>
+      </div>
+      <div class="product-grid">
+        <div class="product-img-wrap reveal">
+          <div class="product-glow"></div>
+          <!-- Substitua pelo caminho real da imagem do produto -->
+          <img src="https://picsum.photos/seed/brush/700/700" alt="Escova Alisadora 3 em 1" class="product-img" />
+        </div>
+        <div class="product-text reveal" data-delay="100">
+          <p>Nossa escova possui um <strong>pente especial embutido</strong>. Esqueça separar mechas — passe como se
+            estivesse penteando e ela faz todo o trabalho.</p>
+          <p>O material <strong>PTC</strong> mantém temperatura constante. O calor fica concentrado <em>dentro</em> dos
+            dentes: a parte exterior não queima a pele, tornando o uso 100% seguro.</p>
+          <p>Funciona em cabelo úmido, para crianças e até para homens alisar a barba. Chega de fumaça e fios queimados.
+          </p>
+          <ul class="product-features">
+            <li><span class="check-icon">✓</span> Desembaraça, modela e alisa em 1 passa</li>
+            <li><span class="check-icon">✓</span> Bivolt — usa em qualquer tomada ou viagem</li>
+            <li><span class="check-icon">✓</span> Segura para cabelo úmido e crianças</li>
+            <li><span class="check-icon">✓</span> Controle de temperatura com botões + / −</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ COMO FUNCIONA ══ -->
+  <section class="section-alt section-pad" id="tecnologia">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">A Tecnologia Por Dentro</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <div class="tech-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+          <h3>Tecnologia PTC</h3>
+          <p>Temperatura inteligente e constante. Atinge potência máxima em 5 minutos e entrega liso uniforme sem picos
+            de calor.</p>
+        </div>
+        <div class="tech-card reveal" data-delay="100">
+          <div class="tech-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Exterior Seguro</h3>
+          <p>O calor fica 100% dentro dos dentes. A parte de fora não agride a pele — sem risco de queimaduras.</p>
+        </div>
+        <div class="tech-card reveal" data-delay="200">
+          <div class="tech-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>Design 3 em 1</h3>
+          <p>Desembaraça, modela as pontas e alisa tudo na mesma passada. Bivolt para usar em qualquer país.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ BENEFÍCIOS ══ -->
+  <section class="section-pad" id="beneficios">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Por que ela é diferente de tudo?</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h4>Rápida</h4>
+          <p>Pente largo abrange mais cabelo que chapinha. Metade do tempo, zero estresse.</p>
+        </div>
+        <div class="benefit-card reveal" data-delay="80">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h4>Segura no Úmido</h4>
+          <p>Diferente de pranchas comuns, seca suavemente sem queimar os fios molhados.</p>
+        </div>
+        <div class="benefit-card reveal" data-delay="160">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h4>Brilho Intenso</h4>
+          <p>Fecha as cutículas ao invés de queimá-las. Resultado: brilho espelhado e sedosidade real.</p>
+        </div>
+        <div class="benefit-card reveal" data-delay="240">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h4>Para a Família</h4>
+          <p>Exterior frio ao toque. Segura para crianças e funciona até em barbas masculinas.</p>
+        </div>
+        <div class="benefit-card reveal" data-delay="320">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="4" y1="21" x2="4" y2="14" />
+              <line x1="4" y1="10" x2="4" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12" y2="3" />
+              <line x1="20" y1="21" x2="20" y2="16" />
+              <line x1="20" y1="12" x2="20" y2="3" />
+              <line x1="1" y1="14" x2="7" y2="14" />
+              <line x1="9" y1="8" x2="15" y2="8" />
+              <line x1="17" y1="16" x2="23" y2="16" />
+            </svg>
+          </div>
+          <h4>Controle Total</h4>
+          <p>Botões + e − intuitivos com indicador de nível. Cada tipo de fio no calor certo.</p>
+        </div>
+        <div class="benefit-card reveal" data-delay="400">
+          <div class="benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+            </svg>
+          </div>
+          <h4>Sem Fumaça</h4>
+          <p>Cerdas vazadas evaporam a umidade de forma limpa. Zero cheiro de queimado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ COMPARATIVO ══ -->
+  <section class="section-alt section-pad" id="comparativo">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Escova vs. Alternativas Comuns</h2>
+      </div>
+      <div class="stats-row reveal" data-delay="100">
+        <div class="stat-chip">+11.450 Pedidos</div>
+        <div class="stat-chip">97% Aprovação</div>
+        <div class="stat-chip">★ 4,9 / 5</div>
+      </div>
+      <div class="compare-table reveal" data-delay="150">
+        <div class="compare-header">
+          <div class="compare-col-bad">❌ Alternativas Comuns</div>
+          <div class="compare-col-good">✅ Escova 3 em 1</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col-bad">Queima a pele pelo exterior quente</div>
+          <div class="compare-col-good">Exterior seguro — calor 100% interno</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col-bad">Precisa desembaraçar antes de pranchar</div>
+          <div class="compare-col-good">Pente embutido desembaraça na hora</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col-bad">Achata a raiz, aspecto sem vida</div>
+          <div class="compare-col-good">Mantém volume e saúde do fio</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col-bad">Lento — mechas minúsculas uma a uma</div>
+          <div class="compare-col-good">Veloz — seções grossas, passada única</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col-bad">Fumaça e queimado nos fios úmidos</div>
+          <div class="compare-col-good">Sem fumaça — respeita fios úmidos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ PREÇOS ══ -->
+  <section class="section-pad" id="precos">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Escolha o seu Kit</h2>
+        <p class="section-sub">Todos com <strong>Frete Grátis</strong> · <strong>Pague na Entrega</strong> · <strong>7
+            dias de garantia</strong></p>
+        <div class="urgency-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+          Oferta por tempo limitado — Estoque Reduzido!
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 1 unidade -->
+        <div class="pricing-card reveal">
+          <h3>1 Unidade</h3>
+          <p class="pricing-desc">Perfeita para uso individual</p>
+          <div class="pricing-old">De R$ 197,00</div>
+          <div class="pricing-price">R$ 97<span>,00</span></div>
+          <div class="pricing-save">Economize R$ 100,00</div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/wfrca-1-unidade-r-97" class="btn-pricing">
+            PEDIR AGORA
+            <span class="btn-delivery-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+              Pague só na entrega
+            </span>
+          </a>
+        </div>
+
+        <!-- 3 unidades (popular) -->
+        <div class="pricing-card pricing-popular reveal" data-delay="100">
+          <div class="popular-badge">⭐ Mais Popular</div>
+          <h3>3 Unidades</h3>
+          <p class="pricing-desc">Melhor custo-benefício — ótimo para presentear</p>
+          <div class="pricing-old">De R$ 441,00</div>
+          <div class="pricing-price popular-price">R$ 200<span>,00</span></div>
+          <div class="pricing-save">Apenas R$ 66,66 por peça!</div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/3-menor-preco" class="btn-pricing btn-pricing-popular">
+            PEDIR AGORA
+            <span class="btn-delivery-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+              Pague só na entrega
+            </span>
+          </a>
+        </div>
+
+        <!-- 2 unidades -->
+        <div class="pricing-card reveal" data-delay="200">
+          <h3>2 Unidades</h3>
+          <p class="pricing-desc">Divida com uma amiga ou parente</p>
+          <div class="pricing-old">De R$ 294,00</div>
+          <div class="pricing-price">R$ 137<span>,00</span></div>
+          <div class="pricing-save">Apenas R$ 68,50 por peça!</div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/duas-137" class="btn-pricing">
+            PEDIR AGORA
+            <span class="btn-delivery-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+              Pague só na entrega
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ GARANTIA ══ -->
+  <section class="section-alt section-pad" id="garantia">
+    <div class="container">
+      <div class="guarantee-wrap reveal">
+        <div class="guarantee-seal">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <polyline points="9 12 11 14 15 10" />
+          </svg>
+          <span>7 Dias</span>
+        </div>
+        <div class="guarantee-text">
+          <h2>Sua compra com risco zero</h2>
+          <p>Você tem <strong>7 dias</strong>, contados a partir do recebimento, para testar a escova como quiser. Se
+            não ficar satisfeita por qualquer motivo, entre em contato e garantimos a devolução — sem enrolação,
+            conforme o Código de Defesa do Consumidor.</p>
+          <div class="guarantee-tags">
+            <span>✓ Risco Zero</span>
+            <span>✓ Sem burocracia</span>
+            <span>✓ Suporte rápido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ FAQ ══ -->
+  <section class="section-pad" id="faq">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+      <div class="faq-list reveal" data-delay="100">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Para qual tipo de cabelo a Escova serve?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Funciona para todos os tipos — finos, grossos, cacheados, crespos e ondulados. O sistema de pente
+              embutido desembaraça e alisa em qualquer tipo de fio, sem precisar separar mechas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Como usar o ajuste de temperatura?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Ligue na tomada e pressione o botão Liga (a luz piscará). Aperte <strong>+</strong> para aumentar e
+              <strong>−</strong> para reduzir a temperatura. O aquecimento máximo PTC leva cerca de 5 minutos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Tem restrição de uso? Machuca?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nenhuma restrição. Crianças, gestantes e homens para barba podem usar. O calor fica oculto dentro das
+              pontas — a parte exterior aquece de forma segura, sem queimar a pele ou o couro cabeludo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona o Frete e a Entrega?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Frete Grátis</strong> fixo para todo o Brasil. Você recebe o código de rastreio por e-mail assim
+              que a encomenda for postada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona o Pagamento na Entrega?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>É a compra mais segura! Você só preenche seus dados de envio. O entregador chega até você e
+              <strong>somente na entrega</strong> você paga — PIX, cartão ou dinheiro. Zero risco de fraude online.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            E se eu não gostar?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p><strong>7 dias de garantia</strong> a partir do recebimento. Entre em contato e garantimos a devolução
+              sem complicações, conforme o Código de Defesa do Consumidor.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ CTA FINAL ══ -->
+  <section class="section-pad cta-final" id="cta-final">
+    <div class="container">
+      <div class="cta-final-inner reveal">
+        <h2>Chega de puxões, queimaduras<br>e horas lutando contra os fios.</h2>
+        <p>Cabelo espetacular, liso com brilho de salão, em menos de 10 minutos — pagando só quando chegar na sua porta.
+        </p>
+        <div class="cta-price-row">
+          <span class="cta-old">De R$ 197,00</span>
+          <span class="cta-price">A partir de <strong>R$ 97,00</strong></span>
+        </div>
+        <a href="#precos" class="btn-primary btn-xl">
+          PEDIR AGORA
+          <span class="btn-sub">Pague só na entrega · Frete Grátis</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">© 2026 — Todos os direitos reservados.</p>
+      <p class="footer-disclaimer">Este site não é afiliado ao Facebook ou Google. Os resultados podem variar conforme o
+        tipo de fio. O produto atende todas as normas de consumo e elétricas do Brasil.</p>
+      <div class="footer-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="https://chat.whatsapp.com/FvpFw4sCeHG7Gk2bYCAqbm" target="_blank" rel="noreferrer">Fale Conosco</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════ STICKY CTA (MOBILE) ══ -->
+  <div class="sticky-cta" id="sticky-cta">
+    <div class="sticky-price">
+      <div class="sticky-old">De R$ 197</div>
+      <div class="sticky-main">R$ 97,00</div>
+      <div class="sticky-label">Pague na entrega</div>
+    </div>
+    <a href="#precos" class="btn-sticky">PEDIR</a>
+  </div>
+
+  <!-- ══════════════════════════════════════ CHATBOT ══ -->
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+    <span class="chat-badge" id="chatBadge"></span>
+  </button>
+
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">
+      <div class="chat-status"><span class="chat-dot"></span> Suporte · Online agora</div>
+      <button class="chat-close" id="chatClose" aria-label="Fechar chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-pill" data-msg="Funciona mesmo?">Funciona mesmo?</button>
+      <button class="chat-pill" data-msg="Como pagar?">Como pagar?</button>
+      <button class="chat-pill" data-msg="Tem frete grátis?">Frete grátis?</button>
+      <button class="chat-pill" data-msg="E se estragar?">E se estragar?</button>
+      <button class="chat-pill" data-msg="Quero comprar">Quero comprar</button>
+    </div>
+  </div>
+
+  <script>
+    // ── PROGRESS BAR ──────────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const pct = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+      document.getElementById('progress-bar').style.width = pct + '%';
+    });
+
+    // ── REVEAL ON SCROLL ─────────────────────────────────────
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const delay = e.target.dataset.delay || 0;
+          setTimeout(() => e.target.classList.add('revealed'), Number(delay));
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── VISITORS COUNTER ──────────────────────────────────────
+    const vc = document.getElementById('visitor-count');
+    if (vc) setInterval(() => { vc.textContent = Math.floor(Math.random() * (59 - 32 + 1) + 32); }, 5000);
+
+    // ── STICKY CTA ────────────────────────────────────────────
+    const stickyCta = document.getElementById('sticky-cta');
+    window.addEventListener('scroll', () => {
+      if (window.innerWidth <= 768) {
+        stickyCta.classList.toggle('visible', window.scrollY > 600);
+      }
+    });
+
+    // ── FAQ ACCORDION ─────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ── CHATBOT ───────────────────────────────────────────────
+    const chatToggle = document.getElementById('chatToggle');
+    const chatClose = document.getElementById('chatClose');
+    const chatbot = document.getElementById('chatbot');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatBadge = document.getElementById('chatBadge');
+    let greeted = false;
+
+    const kb = [
+      { kw: ['frete', 'entrega', 'envio', 'grátis', 'gratis', 'prazo'], ans: 'O <strong>frete é totalmente Grátis</strong> para todo o Brasil! Você recebe o código de rastreio após o envio.' },
+      { kw: ['garantia', 'devolver', 'estragar', 'defeito', 'risco'], ans: 'Você tem <strong>7 dias de garantia</strong> após receber. Se não gostar, devolvemos sem burocracia!' },
+      { kw: ['pagar', 'pagamento', 'pix', 'cartão', 'cartao', 'dinheiro'], ans: 'É <strong>Pague na Entrega</strong>! O entregador chega até você e só então você paga — PIX, cartão ou dinheiro. Zero risco! 👉 <a href="#precos" style="color:#22d3ee">Ver Kits</a>' },
+      { kw: ['funciona', 'alisa', 'resultado', 'produto', 'escova', 'o que'], ans: 'A <strong>Escova 3 em 1</strong> tem tecnologia PTC — calor interno que não queima as mãos. Funciona para todos os tipos de cabelo em 5 min. 🔥' },
+      { kw: ['comprar', 'quero', 'kit', 'kits', 'oferta', 'desconto'], ans: 'Boa escolha! Temos kits de 1, 2 e 3 peças com desconto. 👉 <a href="#precos" style="color:#22d3ee">Ver os Kits</a>' },
+      { kw: ['cacheado', 'crespo', 'ondulado', 'fino', 'grosso', 'úmido', 'umido'], ans: 'Funciona para <strong>todos os tipos</strong> — finos, grossos, cacheados, crespos e até no cabelo úmido!' },
+    ];
+
+    const norm = t => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const getAns = input => {
+      const ni = norm(input); let best = null, sc = 0;
+      for (const item of kb) { const s = item.kw.filter(k => ni.includes(norm(k))).length; if (s > sc) { sc = s; best = item.ans; } }
+      return best || 'Boa pergunta! Fale no <strong>WhatsApp</strong>: <a href="https://chat.whatsapp.com/FvpFw4sCeHG7Gk2bYCAqbm" target="_blank" style="color:#22d3ee">Clique aqui</a>. Lembrando: <strong>Frete Grátis + Pague na Entrega</strong>!';
+    };
+
+    const addMsg = (text, type) => {
+      const div = document.createElement('div');
+      div.className = `chat-msg chat-${type}`;
+      div.innerHTML = text;
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+
+    const addTyping = () => {
+      const div = document.createElement('div');
+      div.className = 'chat-msg chat-bot chat-typing';
+      div.id = 'typing';
+      div.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+
+    const sendMsg = text => {
+      addMsg(text, 'user');
+      addTyping();
+      setTimeout(() => {
+        document.getElementById('typing')?.remove();
+        addMsg(getAns(text), 'bot');
+      }, 700 + Math.random() * 600);
+    };
+
+    document.querySelectorAll('.chat-pill').forEach(btn => {
+      btn.addEventListener('click', () => sendMsg(btn.dataset.msg));
+    });
+
+    chatToggle.addEventListener('click', () => {
+      chatbot.classList.add('open');
+      chatToggle.classList.add('hidden');
+      chatBadge.classList.remove('show');
+      if (!greeted) {
+        greeted = true;
+        addTyping();
+        setTimeout(() => {
+          document.getElementById('typing')?.remove();
+          addMsg('Olá! 😊 Sou a consultora virtual.<br><br>Você está vendo a <strong>Escova Alisadora 3 em 1</strong> — pague só quando chegar na sua porta. Posso tirar alguma dúvida?', 'bot');
+        }, 1200);
+      }
+    });
+
+    chatClose.addEventListener('click', () => {
+      chatbot.classList.remove('open');
+      chatToggle.classList.remove('hidden');
+    });
+
+    setTimeout(() => chatBadge.classList.add('show'), 6000);
+  </script>
+</body>
+
+</html>
