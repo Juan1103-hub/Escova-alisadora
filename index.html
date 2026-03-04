@@ -2,313 +2,1044 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escova Alisadora Hair 3 em 1 - Cabelos Lisos e Brilhantes em Minutos</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K6BSPZ8S');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escova Alisadora 3 em 1 | Liso Perfeito em Minutos</title>
+  <meta name="description"
+    content="Alise, modele e dê brilho aos seus fios em minutos. Pague só na entrega, frete grátis e 7 dias de garantia.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Escova Alisadora 3 em 1 | Liso Perfeito em Minutos">
+  <meta property="og:description"
+    content="Alise, modele e dê brilho aos seus fios em minutos. Pague só na entrega, frete grátis e 7 dias de garantia.">
+  <meta property="og:type" content="product">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#D81B60">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema Markup — SEO Rich Snippets -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Escova Alisadora 3 em 1",
+      "image": "https://picsum.photos/seed/brush-principal/800/800",
+      "description": "Escova Alisadora com tecnologia PTC. Desembaraça, modela e alisa em uma passada. Frete grátis, pague na entrega, 7 dias de garantia.",
+      "brand": { "@type": "Brand", "name": "Premium" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "BRL",
+        "price": "97.00",
+        "availability": "https://schema.org/InStock",
+        "seller": { "@type": "Organization", "name": "Escova Premium" }
+      }
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- Urgency Top Bar (Optional, mas bom para conversão) -->
-    <div class="top-bar">
-        <div class="container fluid-container">
-            <p><i class="fa-solid fa-truck-fast"></i> FRETE GRÁTIS PARA TODO O BRASIL - PAGUE SOMENTE NA ENTREGA!</p>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6BSPZ8S" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Barra de Progresso de Leitura -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <div class="top-spacer" id="top-spacer"></div>
+
+  <!-- ============================
+       SEÇÃO 2 — Hero Principal
+       ============================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Headline -->
+        <h1 class="hero__headline">
+          Diga Adeus ao Frizz.
+          <span class="highlight">Liso Perfeito em Minutos.</span>
+        </h1>
+
+        <!-- Sub-headline -->
+        <h2 class="hero__subheadline">
+          Desembaraça, modela e alisa na mesma passada — sem queimar, sem fumaça, sem mecha por mecha.
+        </h2>
+
+        <!-- Bullets -->
+        <ul class="hero__bullets">
+          <li>
+            <span class="bullet-icon">✅</span>
+            Tecnologia PTC Avançada que distribui o calor uniformemente
+          </li>
+          <li>
+            <span class="bullet-icon">✅</span>
+            Pente inteligente que desembaraça enquanto alisa
+          </li>
+          <li>
+            <span class="bullet-icon">✅</span>
+            Exterior frio ao toque: 100% segura e não queima a pele
+          </li>
+        </ul>
+
+        <!-- Vídeo VSL (Lazy Load Facade) -->
+        <div class="vsl-facade" id="hero-vsl" onclick="loadVSL(this)">
+          <img src="https://picsum.photos/seed/brush-vsl/800/450"
+            alt="Assista ao vídeo de apresentação da Escova Alisadora" class="vsl-facade__thumb" loading="lazy">
+          <button class="vsl-facade__play" aria-label="Reproduzir vídeo">
+            <svg viewBox="0 0 68 48" width="68" height="48">
+              <path class="vsl-facade__play-bg"
+                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                fill="#212121" fill-opacity="0.85" />
+              <path d="M45 24L27 14v20" fill="#fff" />
+            </svg>
+          </button>
         </div>
+
+        <!-- CTA com Preço -->
+        <div class="hero__cta-area">
+          <div class="hero__price-box">
+            <span class="price-old">De R$ 197,00</span>
+            <span class="price-current">Por apenas <span class="price-currency">R$</span> <span
+                class="price-value">97,00</span></span>
+            <span class="price-saving">🔥 Você economiza R$ 100,00!</span>
+          </div>
+          <a href="#pricing-section" class="cta-btn cta-btn--pulse" id="cta-hero">
+            VER OFERTAS ESPECIAIS →
+          </a>
+          <div class="cta-microcopy cta-microcopy--light">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+            </svg>
+            <span>Você só paga quando receber em casa</span>
+          </div>
+          <div class="trust-line">
+            <span class="trust-item">🚚 Frete grátis</span>
+            <span class="trust-item">💳 Você paga só na entrega</span>
+            <span class="trust-item">🛡️ 7 dias para testar em casa</span>
+          </div>
+          <div class="urgency-counter">
+            <span class="urgency-counter__dot"></span>
+            <span id="hero-viewers">47 pessoas estão vendo este produto agora</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 3 — Identificação com a Dor
+       ============================ -->
+  <section class="pain-section section-padding" id="pain-section">
+    <div class="container">
+      <h2 class="section-title reveal">Você se identifica com alguma dessas situações?</h2>
+
+      <div class="pain-list">
+        <div class="pain-list__item reveal">
+          <span class="pain-list__icon">❌</span>
+          Perde horas alisando mecha por mecha e o resultado dura pouco
+        </div>
+        <div class="pain-list__item reveal">
+          <span class="pain-list__icon">❌</span>
+          Tem medo de queimar os fios com chapinhas superaquecidas e agressivas
+        </div>
+        <div class="pain-list__item reveal">
+          <span class="pain-list__icon">❌</span>
+          Frustrada com o frizz que não desaparece de jeito nenhum
+        </div>
+        <div class="pain-list__item reveal">
+          <span class="pain-list__icon">❌</span>
+          Gasta uma fortuna no salão e em produtos alisadores que não funcionam
+        </div>
+        <div class="pain-list__item reveal">
+          <span class="pain-list__icon">❌</span>
+          Dificuldade de arrumar o cabelo rápido antes do trabalho ou compromissos
+        </div>
+      </div>
+
+      <p class="pain-section__closing reveal">
+        Se você se viu em pelo menos um desses pontos, a <strong>Escova Alisadora 3 em 1</strong> foi feita
+        para você.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 4 — Apresentação do Produto
+       ============================ -->
+  <section class="product-section section-padding" id="product-section">
+    <div class="container">
+      <div class="product-grid">
+        <!-- Coluna esquerda — Foto Principal -->
+        <div class="product__image-placeholder reveal" id="product-photo">
+          <img src="https://picsum.photos/seed/brush-principal/800/800" alt="Escova Alisadora 3 em 1 - Foto principal"
+            width="800" height="800" loading="lazy">
+        </div>
+
+        <!-- Coluna direita — Informações -->
+        <div class="product__info reveal">
+          <h2>Conheça a Escova Alisadora 3 em 1</h2>
+          <p>
+            A Escova possui um <strong>pente especial embutido</strong>. Esqueça ter que separar mechas —
+            passe como se estivesse penteando e ela faz todo o trabalho de forma imediata.
+          </p>
+          <p>
+            A tecnologia <strong>PTC</strong> mantém a temperatura sempre estável e constante. O calor fica
+            concentrado <em>dentro</em> dos dentes: a parte exterior não queima a pele, assim você pode
+            fazer o alisamento 100% segura.
+          </p>
+          <p>
+            Funciona também em cabelo úmido, serve para as crianças e até mesmo para homens
+            poderem alinhar a barba de forma rápida.
+          </p>
+          <p>
+            Seu dia a dia mais veloz e prático: sem fumaça, sem cheiro de queimado e com muito brilho espelhado.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 5 — Tecnologia e Materiais
+       ============================ -->
+  <section class="tech-section section-padding" id="tech-section">
+    <div class="container">
+      <h2 class="section-title reveal">A Tecnologia Por Dentro</h2>
+
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <span class="tech-card__icon">🌡️</span>
+          <h3>Tecnologia PTC</h3>
+          <p>
+            Temperatura inteligente e constante. Atinge potência máxima em minutos e entrega um liso uniforme sem picos
+            de calor extremos.
+          </p>
+        </div>
+        <div class="tech-card reveal">
+          <span class="tech-card__icon">🛡️</span>
+          <h3>Exterior Seguro</h3>
+          <p>
+            O calor fica 100% isolado no interior dos dentes. A parte de fora não agride a pele, sem risco nenhum de
+            queimaduras.
+          </p>
+        </div>
+        <div class="tech-card reveal">
+          <span class="tech-card__icon">✨</span>
+          <h3>Design 3 em 1</h3>
+          <p>
+            Desembaraça, modela as pontas e alisa de verdade na mesma passada. Totalmente bivolt para você usar direto
+            na tomada sem preocupação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 6 — Benefícios (Grid de 6 Cards)
+       ============================ -->
+  <section class="benefits-section section-padding" id="benefits-section">
+    <div class="container">
+      <h2 class="section-title reveal">Por que ela é diferente de tudo?</h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">⚡</span>
+          <h3>Extremamente Rápida</h3>
+          <p>
+            Seu pente largo abrange bem mais cabelo que qualquer chapinha. Resultado alcançado na metade do tempo.
+          </p>
+        </div>
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">💧</span>
+          <h3>Segura no Úmido</h3>
+          <p>
+            Diferente das pranchas comuns que fritam o fio, a Escova seca suavemente, respeitando cabelos úmidos.
+          </p>
+        </div>
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">✨</span>
+          <h3>Brilho Intenso</h3>
+          <p>
+            Ela fecha as cutículas, ao invés de queimá-las. Seu cabelo ganha brilho espelhado de salão e sedosidade.
+          </p>
+        </div>
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">👨‍👩‍👧</span>
+          <h3>Para a Família</h3>
+          <p>
+            Sendo fria por fora, é ideal para o cabelo fino das crianças e também usada na barba masculina.
+          </p>
+        </div>
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">🎛️</span>
+          <h3>Controle Total</h3>
+          <p>
+            Dispõe de botões de controle de temperatura intuitivos (+ e -). Controle exato para cada tipo de fio
+            capilar.
+          </p>
+        </div>
+        <div class="benefit-card reveal">
+          <span class="benefit-card__icon">💨</span>
+          <h3>Sem Fumaça</h3>
+          <p>
+            A estrutura de cerdas evapora o pouco de umidade de forma super limpa, eliminando qualquer cheiro de
+            queimado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 7 — Vídeo Demonstração
+       ============================ -->
+  <section class="demo-section section-padding" id="demo-section">
+    <div class="container">
+      <h2 class="section-title reveal">Veja como é fácil utilizar na prática</h2>
+
+      <div class="demo-video-wrapper reveal">
+        <div class="vsl-facade" id="demo-video" onclick="loadDemo(this)">
+          <img src="https://picsum.photos/seed/brush-demo/800/450" alt="Veja como funciona a Escova Alisadora"
+            class="vsl-facade__thumb" loading="lazy">
+          <button class="vsl-facade__play" aria-label="Reproduzir demonstração">
+            <svg viewBox="0 0 68 48" width="68" height="48">
+              <path class="vsl-facade__play-bg"
+                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                fill="#212121" fill-opacity="0.85" />
+              <path d="M45 24L27 14v20" fill="#fff" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 8 — Galeria
+       ============================ -->
+  <section class="gallery-section section-padding" id="gallery-section">
+    <div class="container">
+      <h2 class="section-title reveal">Depoimentos de clientes por mensagens</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" id="gallery-1" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/brush-detalhe1/400/400" alt="Detalhe 1 - Escova Alisadora"
+            loading="lazy">
+        </div>
+        <div class="gallery-item reveal" id="gallery-2" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/brush-detalhe2/400/400" alt="Detalhe 2 - Escova Alisadora"
+            loading="lazy">
+        </div>
+        <div class="gallery-item reveal" id="gallery-3" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/brush-detalhe3/400/400" alt="Detalhe 3 - Escova Alisadora"
+            loading="lazy">
+        </div>
+        <div class="gallery-item reveal" id="gallery-4" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/brush-detalhe4/400/400" alt="Detalhe 4 - Escova Alisadora"
+            loading="lazy">
+        </div>
+      </div>
     </div>
 
-    <!-- Header / Nav -->
-    <header class="header">
-        <div class="container fluid-container header-inner">
-            <div class="logo">
-                <strong>Hair<span>Glow</span></strong> <!-- Substitua pela Logo real do produto/loja se tiver -->
-            </div>
-            <a href="#ofertas" class="btn btn-sm btn-outline">Ver Ofertas</a>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+      <button class="lightbox__close" aria-label="Fechar">&times;</button>
+      <img id="lightbox-img" src="" alt="Ampliação">
+    </div>
+  </section>
+
+
+
+  <!-- ============================
+       SEÇÃO 9 — Depoimentos em Vídeo
+       ============================ -->
+  <section class="video-testimonials-section section-padding" id="video-testimonials-section">
+    <div class="container">
+      <h2 class="section-title reveal">Assista o que estão falando</h2>
+
+      <div class="video-testimonials-grid video-testimonials-grid--single">
+        <div class="vsl-facade reveal" id="video-testimonial-1" onclick="loadDepoimento(this)">
+          <img src="https://picsum.photos/seed/brush-depoimento/800/450"
+            alt="Depoimento de cliente sobre a Escova Alisadora" class="vsl-facade__thumb" loading="lazy">
+          <button class="vsl-facade__play" aria-label="Reproduzir depoimento">
+            <svg viewBox="0 0 68 48" width="68" height="48">
+              <path class="vsl-facade__play-bg"
+                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+                fill="#212121" fill-opacity="0.85" />
+              <path d="M45 24L27 14v20" fill="#fff" />
+            </svg>
+          </button>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="inicio">
-            <div class="container fluid-container hero-grid">
-                <div class="hero-content">
-                    <div class="badge">Nº 1 em Vendas</div>
-                    <h1 class="hero-title">Cabelos Lisos, Macios e com Mais Vida em Minutos!</h1>
-                    <p class="hero-subtitle">A revolucionária <strong>Escova Alisadora 3 em 1</strong> possui pente PTC
-                        embutido. Alise desde a raiz sem queimar, puxar ou soltar fumaça. Adeus chapinha tradicional!
-                    </p>
-
-                    <ul class="hero-benefits-list">
-                        <li><i class="fa-solid fa-check-circle"></i> Para todos os tipos de cabelos (Finos, Grossos,
-                            Cacheados ou Crespos).</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Não queima o cabelo e nem faz fumaça.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Pode ser usada em adultos, crianças e até em barbas
-                            masculinas.</li>
-                    </ul>
-
-                    <div class="hero-cta">
-                        <a href="#ofertas" class="btn btn-lg btn-primary heartbeat">
-                            QUERO A MINHA AGORA
-                            <span class="btn-subtext">Pague Apenas Quando Receber</span>
-                        </a>
-                        <div class="hero-trust">
-                            <i class="fa-solid fa-shield-halved"></i> Compra 100% Segura | Garantia de 7 Dias
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-media">
-                    <!-- Placeholder de Imagem do Produto -->
-                    <div class="media-placeholder image-placeholder">
-                        <i class="fa-solid fa-image"></i>
-                        <span>Insira aqui a Foto 1 do Produto</span>
-                        <small>(Recomendado: Produto sem fundo destacando as cerdas)</small>
-                        <!-- <img src="caminho-da-imagem.jpg" alt="Escova Alisadora Hair 3 em 1"> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Transformation Section -->
-        <section class="video-section">
-            <div class="container fluid-container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Veja Como Funciona na Prática</h2>
-                    <p class="section-subtitle">Transforme seu visual em casa, com resultado de salão.</p>
-                </div>
-
-                <div class="video-wrapper">
-                    <div class="media-placeholder video-placeholder">
-                        <i class="fa-solid fa-video"></i>
-                        <span>Insira aqui o Vídeo de Demonstração</span>
-                        <!-- 
-                        Coloque o iframe do Youtube/Vimeo ou a tag <video> aqui
-                        <video controls>
-                            <source src="seu-video.mp4" type="video/mp4">
-                        </video> 
-                        -->
-                    </div>
-                </div>
-
-                <div class="text-center mt-scale-4">
-                    <a href="#ofertas" class="btn btn-primary">EU QUERO ESTE RESULTADO</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features/Benefits Breakdown -->
-        <section class="benefits bg-light" id="beneficios">
-            <div class="container fluid-container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Por que ela é muito melhor que a Chapinha comum?</h2>
-                </div>
-
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-temperature-arrow-up"></i>
-                        </div>
-                        <h3>Tecnologia PTC Constante</h3>
-                        <p>O pente é feito de material PTC especial de alta qualidade, garantindo que a temperatura se
-                            mantenha constante para o melhor desempenho sem oscilações que danificam o fio.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-shield-cat"></i>
-                        </div>
-                        <h3>Proteção Total (Não Queima)</h3>
-                        <p>Ela não esquenta muito por fora para que você não se machuque. Ela esquenta apenas por dentro
-                            dos dentes, aquecendo somente os fios de cabelo de maneira segura.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-wind"></i>
-                        </div>
-                        <h3>Zero Fumaça e Danos</h3>
-                        <p>Diferente da chapinha que frita e solta aquela fumaça assustadora, a nossa escova desliza
-                            suavemente mantendo a hidratação natural do cabelo, dando muito mais vida.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h3>Versatilidade para Todos</h3>
-                        <p>Ideal para qualquer tipo e curvatura de cabelo. Pode ser usada com segurança em crianças,
-                            adultos e até para alinhar barbas masculinas volumosas!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How to Use Section -->
-        <section class="how-to-use text-center">
-            <div class="container fluid-container">
-                <h2 class="section-title">Muito Fácil de Usar!</h2>
-                <div class="steps-grid mt-scale-6">
-                    <div class="step-item">
-                        <div class="step-number">1</div>
-                        <p>Ligue na tomada, a luz irá piscar. Aperte o botão ligar para ela acender totalmente.</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">2</div>
-                        <p>Aperte o botão <strong>+</strong> até acenderem as luzes desejadas (5 opções de temperatura).
-                            Todas acesas = mais quente.</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">3</div>
-                        <p>Aguarde cerca de 5 minutos para atingir a capacidade máxima e em seguida, passe no cabelo
-                            úmido ou seco para finalizar!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </div>
+  </section>
 
 
 
-        <!-- Pricing / Checkout Section -->
-        <section class="pricing" id="ofertas">
-            <div class="container fluid-container">
-                <div class="section-header text-center highlight-header">
-                    <h2 class="section-title text-white">Escolha a Melhor Oferta Para Você!</h2>
-                    <p class="section-subtitle text-white">Estoque Limitado. Aproveite Condições Especiais Hoje.</p>
-                </div>
-
-                <div class="pricing-grid">
-
-                    <!-- Oferta 1 -->
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <h3>Leve 1 Unidade</h3>
-                            <p>Ideial para testar</p>
-                        </div>
-                        <div class="card-price">
-                            <div class="old-price">De R$ 199,90</div>
-                            <div class="current-price">
-                                <span class="currency">R$</span> 129<span class="cents">,00</span>
-                            </div>
-                        </div>
-                        <div class="card-savings">
-                            <i class="fa-solid fa-tags"></i> Você economiza R$ 70,90!
-                        </div>
-                        <div class="card-features">
-                            <ul>
-                                <li><i class="fa-solid fa-plus text-primary"></i> 1x Escova Alisadora 3 em 1 Bivolt</li>
-                                <li><i class="fa-solid fa-plus text-primary"></i> Manuais de Uso</li>
-                            </ul>
-                        </div>
-                        <a href="https://entrega.logzz.com.br/pay/memg2d087/vrcju-preco-normal"
-                            class="btn btn-checkout">COMPRAR 1 UNIDADE</a>
-                        <p class="secure-text"><i class="fa-solid fa-lock"></i> Pagamento na Entrega</p>
-                    </div>
-
-                    <!-- Oferta 2 (Destaque) -->
-                    <div class="pricing-card popular">
-                        <div class="popular-badge">MAIS VENDIDO - 25% OFF</div>
-                        <div class="card-header">
-                            <h3>Leve 2 Unidades</h3>
-                            <p>Presenteie alguém especial</p>
-                        </div>
-                        <div class="card-price">
-                            <div class="old-price">De R$ 399,80</div>
-                            <div class="current-price">
-                                <span class="currency">R$</span> 179<span class="cents">,00</span>
-                            </div>
-                        </div>
-                        <div class="card-savings highlight-savings">
-                            <i class="fa-solid fa-tags"></i> Você economiza R$ 220,80!
-                        </div>
-                        <div class="card-features">
-                            <ul>
-                                <li><i class="fa-solid fa-plus text-primary"></i> 2x Escovas Alisadoras 3 em 1 Bivolt
-                                </li>
-                                <li><i class="fa-solid fa-plus text-primary"></i> Manuais de Uso</li>
-                            </ul>
-                        </div>
-                        <a href="https://entrega.logzz.com.br/pay/memg2d087/duas-oferta-especial"
-                            class="btn btn-checkout btn-pulse">COMPRAR 2 UNIDADES</a>
-                        <p class="secure-text"><i class="fa-solid fa-lock"></i> Pagamento na Entrega</p>
-                    </div>
-
-                    <!-- Oferta 3 -->
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <h3>Leve 3 Unidades</h3>
-                            <p>O Menor Preço por Unidade!</p>
-                        </div>
-                        <div class="card-price">
-                            <div class="old-price">De R$ 599,70</div>
-                            <div class="current-price">
-                                <span class="currency">R$</span> 200<span class="cents">,00</span>
-                            </div>
-                        </div>
-                        <div class="card-savings highlight-savings">
-                            <i class="fa-solid fa-tags"></i> Você economiza R$ 399,70!
-                        </div>
-                        <div class="card-features">
-                            <ul>
-                                <li><i class="fa-solid fa-plus text-primary"></i> 3x Escovas Alisadoras 3 em 1 Bivolt
-                                </li>
-                                <li><i class="fa-solid fa-plus text-primary"></i> Manuais de Uso</li>
-                            </ul>
-                        </div>
-                        <a href="https://entrega.logzz.com.br/pay/memg2d087/3-menor-preco"
-                            class="btn btn-checkout">COMPRAR 3 UNIDADES</a>
-                        <p class="secure-text"><i class="fa-solid fa-lock"></i> Pagamento na Entrega</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Especificações Técnicas -->
-        <section class="specs-section bg-light">
-            <div class="container fluid-container">
-                <h2 class="section-title text-center mb-scale-6">Especificações do Produto</h2>
-                <div class="specs-wrapper">
-                    <ul class="specs-list">
-                        <li><strong>Material Principal:</strong> PTC de Alta Qualidade</li>
-                        <li><strong>Voltagem:</strong> Bivolt Automático (110V/220V)</li>
-                        <li><strong>Potência:</strong> 45W</li>
-                        <li><strong>Temperaturas:</strong> Cerca de 130ºC a 200ºC</li>
-                        <li><strong>Engrenagens de Temp:</strong> 5 níveis de ajuste (+ e -)</li>
-                        <li><strong>Tempo Ideal de Modelagem:</strong> 1-2 minutos após aquecida</li>
-                        <li><strong>Peso Líquido do Produto:</strong> 359g</li>
-                        <li><strong>Frequência Avaliada:</strong> 50hz</li>
-                        <li><strong>Dimensões Aproximadas:</strong> 27cm x 12cm x 3cm</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container fluid-container footer-inner">
-            <div class="footer-links">
-                <a href="#">Termos de Uso</a>
-                <span class="divider">|</span>
-                <a href="#">Políticas de Privacidade</a>
-            </div>
-            <div class="footer-disclaimer">
-                <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do
-                    Facebook, a responsabilidade não é deles e sim do nosso site.</p>
-                <p>O pagamento de todos os pedidos é processado na modalidade Pagamento na Entrega (COD), garantindo
-                    100% de segurança na sua compra.</p>
-            </div>
-            <div class="footer-copyright">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> HairGlow. Todos os direitos reservados.
-            </div>
+  <!-- ============================
+       SEÇÃO 10 — Comparação VS
+       ============================ -->
+  <section class="comparison-section section-padding" id="comparison-section">
+    <div class="container">
+      <h2 class="section-title reveal">Escova vs. Alternativas Comuns</h2>
+      <div class="stats-bar reveal">
+        <div class="stats-bar__item">
+          <strong>+11.450</strong>
+          <span>pedidos já entregues</span>
         </div>
-    </footer>
+        <div class="stats-bar__divider"></div>
+        <div class="stats-bar__item">
+          <strong>97%</strong>
+          <span>taxa de aprovação capilar</span>
+        </div>
+        <div class="stats-bar__divider"></div>
+        <div class="stats-bar__item">
+          <strong>⭐ 4,9/5</strong>
+          <span>avaliação média dos clientes</span>
+        </div>
+      </div>
+      <div class="comparison-grid reveal">
+        <div class="comparison-col comparison-col--bad">
+          <h3>❌ Chapinhas Comuns</h3>
+          <ul>
+            <li>Queimam a sua pele quando encosta</li>
+            <li>Exigem desembaraçar os fios perfeitamente antes</li>
+            <li>Achatam muito a raiz, dando aspecto esticado e sem vida</li>
+            <li>Lentas: precisam separar mechas minúsculas de cada vez</li>
+            <li>Faz fumaça e cheiro ruim nos cabelos úmidos</li>
+          </ul>
+        </div>
+        <div class="comparison-col comparison-col--good">
+          <h3>✅ Escova 3 em 1</h3>
+          <ul>
+            <li>Exterior seguro e protetor — o calor é 100% interno</li>
+            <li>O pente já embutido desembaraça na exata hora da passada</li>
+            <li>Mantém a maciez, o volume natural e a vida dos fios</li>
+            <li>Veloz: pega seções inteiras de cabelo de uma só vez</li>
+            <li>Sem fumaça: respeita tranquilamente a umidade</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 11 — Kits e Oferta (3 Planos)
+       ============================ -->
+  <section class="pricing-section section-padding" id="pricing-section">
+    <div class="container">
+      <h2 class="section-title reveal">Escolha o seu Kit</h2>
+      <p class="pricing-intro reveal">
+        Todas as opções com frete grátis, pagamento somente na entrega e 7 dias
+        para testar em casa com toda a segurança.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- Plano 1 -->
+        <div class="pricing-card reveal" id="plan-1">
+          <h3>1x Escova Alisadora</h3>
+          <p>Ideal para uso individual — o básico perfeito.</p>
+          <div class="pricing-card__prices">
+            <span class="pricing-card__old-price">De <s>R$ 197,00</s></span>
+            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 97,00</span>
+            <span class="pricing-card__saving">🔥 Economia de R$ 100,00</span>
+          </div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/wfrca-1-unidade-r-97" class="cta-btn" id="cta-plan-1">
+            QUERO 1 UNIDADE
+          </a>
+          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
+        </div>
+
+        <!-- Plano 2 (Destaque) -->
+        <div class="pricing-card pricing-card--featured reveal" id="plan-3">
+          <span class="pricing-card__badge">⭐ Mais Popular</span>
+          <span class="pricing-card__best-value">💡 Melhor custo por unidade</span>
+          <h3>3x Escova Alisadora</h3>
+          <p>Melhor custo-benefício — o estoque perfeito para presentear as amigas.</p>
+          <div class="pricing-card__prices">
+            <span class="pricing-card__old-price">De <s>R$ 441,00</s></span>
+            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 200,00</span>
+            <span class="pricing-card__saving">🔥 Apenas R$ 66,66 por peça!</span>
+          </div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/3-menor-preco" class="cta-btn cta-btn--pulse"
+            id="cta-plan-2">
+            QUERO O KIT COM 3
+          </a>
+          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
+        </div>
+
+        <!-- Plano 3 -->
+        <div class="pricing-card reveal" id="plan-2">
+          <h3>2x Escova Alisadora</h3>
+          <p>Para dividir com uma parente ou amiga próxima.</p>
+          <div class="pricing-card__prices">
+            <span class="pricing-card__old-price">De <s>R$ 294,00</s></span>
+            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 137,00</span>
+            <span class="pricing-card__saving">🔥 Apenas R$ 68,50 por peça!</span>
+          </div>
+          <a href="https://entrega.logzz.com.br/pay/memg2d087/duas-137" class="cta-btn" id="cta-plan-3">
+            QUERO O KIT COM 2
+          </a>
+          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
+        </div>
+      </div>
+      <div class="urgency-counter urgency-counter--dark" style="max-width: 500px; margin: var(--space-xl) auto 0;">
+        <span class="urgency-counter__dot"></span>
+        <span>⚡ Oferta por tempo limitado estoque reduzido</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 12 — Garantia
+       ============================ -->
+  <section class="guarantee-section section-padding" id="guarantee-section">
+    <div class="container">
+      <div class="guarantee-grid">
+        <!-- Selo de garantia -->
+        <div class="guarantee__seal-placeholder reveal" id="guarantee-seal">
+          <img src="https://picsum.photos/seed/garantia/300/300" alt="Selo de garantia 7 dias" width="200" height="200">
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="guarantee__content reveal">
+          <h2>Sua compra tem risco zero</h2>
+          <p>
+            Você tem 7 dias, contados a partir do recebimento da escova alisadora, para testar a praticidade
+            e ver com os próprios olhos a mudança e brilho no seu cabelo.
+          </p>
+          <p>
+            Se nesse período você sentir que a Escova Ortopédica não te ajudou como esperava,
+            basta entrar em contato e vamos te orientar sobre a devolução do dinheiro imediata,
+            conforme o Código de Defesa do Consumidor.
+          </p>
+          <div class="guarantee__badges">
+            <span>🛡️ Risco Zero</span>
+            <span>💰 Sem burocracia</span>
+            <span>📞 Suporte rápido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 13 — FAQ (Accordion)
+       ============================ -->
+  <section class="faq-section section-padding" id="faq-section">
+    <div class="container">
+      <h2 class="section-title reveal">Perguntas Frequentes</h2>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-1">
+            <span>Serve para qual tipo de cabelo?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Funciona perfeitamente para todos os tipos de fios: finos, grossos, cacheados, crespos e ondulados.
+              O sistema de pente desembaraça sem precisar pranchar o fio forte.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-2">
+            <span>Como uso a temperatura certa?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Após ligar na energia, aperte o botão '+ / -' para ajustar do baixo (fios finos)
+              até o alto (fios mais crespinhos e grossos). Ela aquece em alguns minutos.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-3">
+            <span>Tem possibilidade de machucar o couro cabeludo?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Absolutamente nenhuma. A parte do aquecimento total fica inteiramente por dentro.
+              Já a área externa que pode encostar em você na hora do uso, se mantém na temperatura normal.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-4">
+            <span>Como funciona o pagamento? É só na entrega mesmo?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Sim! A forma mais segura possível. Você faz o pedido em nosso site (cadastro do endereço e afins),
+              o seu pedido é despachado, e aí você só efetua o pagamento depois que recebê-lo em casa na mão
+              do entregador através de Cartão, Pix ou Dinheiro.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-5">
+            <span>Tem garantia e caso estragar?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Você tem o total de 7 dias depois do momento de recebimento de teste,
+              assim você pode exercer sua opção simples de reembolso / troca previstos à sua total segurança.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 14 — CTA Final
+       ============================ -->
+  <section class="final-cta-section section-padding" id="final-cta">
+    <div class="container">
+      <h2 class="reveal">Chega de lutar horas a fio em cima do cabelo</h2>
+      <p class="reveal">
+        Nunca foi tão simples possuir fios lindos, macios e livres daquele cheiro artificial de esfumaçamento.
+        <br><br>
+        Comece já a usufruir de liso natural espelhado de salão, garantindo seu próprio auto-cuidado, sem machucar o
+        próprio
+        rosto em risco ou esquentando muito além de forma perigosa. Com nosso pagamento somente ao chegar até sua casa e
+        o
+        bônus temporário de zero custo com frete, está na hora!
+      </p>
+      <div class="final-cta__price reveal">
+        <span class="price-old">De R$ 197,00</span>
+        <span class="price-current price-current--white">A partir de <span class="price-currency">R$</span>
+          <span class="price-value">97,00</span></span>
+        <span class="price-saving">🔥 Bônus especial agora!</span>
+      </div>
+      <a href="#pricing-section" class="cta-btn cta-btn--pulse reveal" id="cta-final">
+        SELECIONAR SEU KIT →
+      </a>
+      <div class="cta-microcopy cta-microcopy--light" style="margin-top: 12px;">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+        </svg>
+        <span>Você só paga quando receber em casa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SEÇÃO 15 — Rodapé
+       ============================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p>© 2026 Escovas Alisadoras Brasil — Todos os direitos reservados.</p>
+      <p>Este site não é afiliado ao Facebook™ ou Google™. Os resultados podem variar ao tipo respectivo dos fios. Total
+        em normas.</p>
+      <div class="footer__links">
+        <a href="#" id="link-privacy" target="_blank">Política de Privacidade</a>
+        <a href="#" id="link-terms" target="_blank">Termos de Uso</a>
+        <a href="#" id="link-contact" target="_blank">Fale Conosco</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================
+       Assistente Virtual (Chatbot)
+       ============================ -->
+  <button class="chatbot-float" id="chatbot-toggle" aria-label="Falar com o Assistente Virtual"
+    onclick="toggleChatbot()">
+    <span class="chatbot-float__icon" id="chatbot-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z"
+          fill="white" />
+        <circle cx="8" cy="11" r="1.2" fill="#D81B60" />
+        <circle cx="12" cy="11" r="1.2" fill="#D81B60" />
+        <circle cx="16" cy="11" r="1.2" fill="#D81B60" />
+      </svg>
+    </span>
+    <span class="chatbot-float__badge" id="chatbot-badge">1</span>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-header">
+      <div class="chatbot-header__info">
+        <div class="chatbot-header__avatar" style="background:var(--color-primary-light);">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z"
+              fill="white" />
+          </svg>
+        </div>
+        <div>
+          <span class="chatbot-header__name">Consultora Julia</span>
+          <span class="chatbot-header__status">🟢 Online agora</span>
+        </div>
+      </div>
+      <button class="chatbot-header__close" onclick="toggleChatbot()" aria-label="Fechar chat">&times;</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbot-messages">
+    </div>
+
+    <div class="chatbot-suggestions" id="chatbot-suggestions">
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Funciona mesmo?')">🪮 Funciona mesmo?</button>
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Como funciona o pagamento?')">💳
+        Pagamento</button>
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Tem frete grátis?')">🚚 Frete</button>
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Serve no cabelo crespo?')">✨ Tipos de
+        Fios?</button>
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Qual é a garantia?')">🛡️ Garantia</button>
+      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Quero comprar')">🛒 Comprar agora</button>
+    </div>
+
+    <div class="chatbot-input-area">
+      <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Digite sua dúvida..." autocomplete="off"
+        onkeydown="if(event.key==='Enter')sendMessage()">
+      <button class="chatbot-send-btn" id="chatbot-send" onclick="sendMessage()" aria-label="Enviar mensagem">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="white" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================
+       JavaScript (Do template da Joelheira)
+       ============================ -->
+  <script>
+    // ─── FAQ Accordion ───
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-item.active').forEach(el => {
+        el.classList.remove('active');
+        el.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle current
+      if (!isActive) {
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // ─── Lightbox ───
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(event) {
+      if (event.target === event.currentTarget || event.target.closest('.lightbox__close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+
+    // ─── Scroll Reveal Animations ───
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible', 'active'); // Added 'active' just in case legacy CSS requires it
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // ─── Smooth scroll for anchor links ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ─── Contador dinâmico de visitantes ───
+    function updateViewers() {
+      const el = document.getElementById('hero-viewers');
+      if (el) {
+        const n = Math.floor(Math.random() * (59 - 32) + 32);
+        el.innerText = n + ' pessoas est\u00e3o vendo este produto agora';
+      }
+    }
+    updateViewers();
+    setInterval(updateViewers, 5000);
+
+    // ═══════════════════════════════════════════════════
+    //  ASSISTENTE VIRTUAL — CHATBOT (NOVO DA ESCOVA)
+    // ═══════════════════════════════════════════════════
+    const chatbotState = {
+      isOpen: false,
+      hasGreeted: false,
+      typingTimer: null
+    };
+
+    const UI = {
+      get window() { return document.getElementById('chatbot-window') },
+      get badge() { return document.getElementById('chatbot-badge') },
+      get toggleIcon() { return document.getElementById('chatbot-icon') },
+      get messages() { return document.getElementById('chatbot-messages') },
+      get input() { return document.getElementById('chatbot-input') },
+      get suggestions() { return document.getElementById('chatbot-suggestions') }
+    };
+
+    const KB = [
+      { words: ['frete', 'entrega', 'envio'], reply: 'O nosso <strong>frete é grátis</strong> por tempo restrito para o país inteiro!' },
+      { words: ['pagamento', 'pagar', 'cartao', 'pix'], reply: 'Você só pagará depois que receber e pode pagar em via Pix, Cartão de Crédito e no Dinheiro. 😉' },
+      { words: ['crespo', 'fino', 'cacheado'], reply: 'Ela é extremamente versátil para qualquer textura — você não tem problemas desde cabelos mais delicados a difíceis de alisamento.' },
+      { words: ['garantia', 'n funciona'], reply: 'Aqui você está completamente protegida e temos total de 7 dias com nosso sistema formal 100% regulamentado sem chateações na troca e reembolso' },
+      { words: ['comprar', 'onde', 'kit'], reply: 'Dá só uma olhadinha nesse botão ao lado (ou no topo) que ele te mandará para o local super simples dos Kits disponíveis!' }
+    ];
+
+    function toggleChatbot() {
+      chatbotState.isOpen = !chatbotState.isOpen;
+
+      if (chatbotState.isOpen) {
+        UI.window.classList.add('active');
+        if (UI.badge) UI.badge.style.display = 'none';
+
+        // Switch icon to close
+        if (UI.toggleIcon) {
+          UI.toggleIcon.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="white"/></svg>';
+        }
+
+        if (!chatbotState.hasGreeted) {
+          chatbotState.hasGreeted = true;
+          showTyping();
+          setTimeout(() => {
+            removeTyping();
+            appendMessage('Olá maravilha! ✨ Sou conselheira assistente, por incrível que pareça eu sou real a nível de resposta rsrs. <br><br>Gostaria de algo no particular, em específico a forma de pagar e o bônus de entrega?', 'bot');
+          }, 1200);
+        }
+      } else {
+        UI.window.classList.remove('active');
+        // Switch back to chat icon
+        if (UI.toggleIcon) {
+          UI.toggleIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z" fill="white" />
+                    <circle cx="8" cy="11" r="1.2" fill="#D81B60" />
+                    <circle cx="12" cy="11" r="1.2" fill="#D81B60" />
+                    <circle cx="16" cy="11" r="1.2" fill="#D81B60" />
+                    </svg>`;
+        }
+      }
+    }
+
+    function appendMessage(text, sender) {
+      const wrap = document.createElement('div');
+      wrap.className = `chatbot-msg chatbot-msg--${sender}`;
+
+      const bubble = document.createElement('div');
+      bubble.className = 'chatbot-msg__bubble';
+      bubble.innerHTML = text;
+
+      wrap.appendChild(bubble);
+      UI.messages.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function showTyping() {
+      if (document.getElementById('chatbot-typing')) return;
+
+      const wrap = document.createElement('div');
+      wrap.className = 'chatbot-msg chatbot-msg--bot';
+      wrap.id = 'chatbot-typing';
+
+      const bubble = document.createElement('div');
+      bubble.className = 'chatbot-msg__bubble chatbot-msg__bubble--typing';
+      bubble.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+
+      wrap.appendChild(bubble);
+      UI.messages.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function removeTyping() {
+      const el = document.getElementById('chatbot-typing');
+      if (el) el.remove();
+    }
+
+    function scrollToBottom() {
+      if (UI.messages) UI.messages.scrollTop = UI.messages.scrollHeight;
+    }
+
+    function getBotResponse(input) {
+      const text = input.toLowerCase().trim();
+      for (let item of KB) {
+        if (item.words.some(word => text.includes(word))) {
+          return item.reply;
+        }
+      }
+      return "Ah muito bem observada o detalhe. Em geral indicamos ver as ofertas aqui nos pacotes na página mesmo. Aproveite a política de Pague Quando Receber!";
+    }
+
+    function processUserInput(text) {
+      if (!text.trim()) return;
+
+      appendMessage(text, 'user');
+      if (UI.input) UI.input.value = '';
+
+      showTyping();
+
+      const delay = Math.random() * 1000 + 800; // 800-1800ms
+      clearTimeout(chatbotState.typingTimer);
+      chatbotState.typingTimer = setTimeout(() => {
+        removeTyping();
+        const reply = getBotResponse(text);
+        appendMessage(reply, 'bot');
+      }, delay);
+    }
+
+    function sendMessage() {
+      if (UI.input) processUserInput(UI.input.value);
+    }
+
+    function sendSuggestion(text) {
+      if (!chatbotState.hasGreeted) {
+        chatbotState.hasGreeted = true;
+      }
+      processUserInput(text);
+    }
+
+    setTimeout(() => {
+      if (!chatbotState.isOpen && UI.badge) {
+        UI.badge.style.display = 'flex';
+        UI.badge.style.animation = 'pulse-glow 2s infinite';
+      }
+    }, 5000);
+
+
+    // ═══════════════════════════════════════════════════
+    //  VSLs — Lazy Load Facade
+    // ═══════════════════════════════════════════════════
+    function loadVSL(container) {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/rIxBw_inwuM?autoplay=1&rel=0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      container.innerHTML = '';
+      container.appendChild(iframe);
+      container.style.cursor = 'default';
+    }
+
+    function loadDepoimento(container) {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/lYjCuQ48pvM?autoplay=1&rel=0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      container.innerHTML = '';
+      container.appendChild(iframe);
+      container.style.cursor = 'default';
+    }
+
+    function loadDemo(container) {
+      const iframe = document.createElement('iframe');
+      // Como não temos a URL específica, uso um genérico ou a do VSL. Aqui mantemos estrutura.
+      iframe.src = 'https://www.youtube.com/embed/rIxBw_inwuM?autoplay=1&rel=0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      container.innerHTML = '';
+      container.appendChild(iframe);
+      container.style.cursor = 'default';
+    }
+
+
+    // ═══════════════════════════════════════════════════
+    //  CRO — Sticky CTA Mobile
+    // ═══════════════════════════════════════════════════
+    const stickyCta = document.getElementById('sticky-cta-mobile');
+    if (stickyCta) {
+      window.addEventListener('scroll', function () {
+        const heroBottom = document.getElementById('hero') ?
+          document.getElementById('hero').getBoundingClientRect().bottom : 0;
+        if (heroBottom < -100) {
+          stickyCta.classList.add('visible');
+        } else {
+          stickyCta.classList.remove('visible');
+        }
+      }, { passive: true });
+    }
+
+    // ═══════════════════════════════════════════════════
+    //  CRO — Barra de Progresso de Leitura Baseada em Scroll
+    // ═══════════════════════════════════════════════════
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      const sp = document.getElementById('scroll-progress');
+      if (sp) sp.style.width = progress + '%';
+    }, { passive: true });
+
+  </script>
+
+  <!-- Sticky CTA Mobile -->
+  <div class="sticky-cta-mobile" id="sticky-cta-mobile">
+    <div class="sticky-cta-mobile__price">
+      <small>De R$ 197,00</small>
+      R$ 97,00
+    </div>
+    <a href="#pricing-section" class="sticky-cta-mobile__btn">
+      VER OFERTAS →
+    </a>
+  </div>
+
+
 
 </body>
 
