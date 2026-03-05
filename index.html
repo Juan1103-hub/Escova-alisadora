@@ -786,7 +786,11 @@
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible', 'active'); // Added 'active' just in case legacy CSS requires it
+          entry.target.classList.add('visible');
+          // Não adicionar 'active' nos .faq-item (conflita com o accordion)
+          if (!entry.target.classList.contains('faq-item')) {
+            entry.target.classList.add('active');
+          }
         }
       });
     }, {
