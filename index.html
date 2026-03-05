@@ -1,1050 +1,672 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html class="dark" lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-K6BSPZ8S');</script>
-  <!-- End Google Tag Manager -->
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escova Alisadora 3 em 1 | Liso Perfeito em Minutos</title>
-  <meta name="description"
-    content="Alise, modele e dê brilho aos seus fios em minutos. Pague só na entrega, frete grátis e 7 dias de garantia.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Escova Alisadora 3 em 1 | Liso Perfeito em Minutos">
-  <meta property="og:description"
-    content="Alise, modele e dê brilho aos seus fios em minutos. Pague só na entrega, frete grátis e 7 dias de garantia.">
-  <meta property="og:type" content="product">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta name="theme-color" content="#D81B60">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Schema Markup — SEO Rich Snippets -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Escova Alisadora 3 em 1",
-      "image": "https://picsum.photos/seed/brush-principal/800/800",
-      "description": "Escova Alisadora com tecnologia PTC. Desembaraça, modela e alisa em uma passada. Frete grátis, pague na entrega, 7 dias de garantia.",
-      "brand": { "@type": "Brand", "name": "Premium" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "BRL",
-        "price": "97.00",
-        "availability": "https://schema.org/InStock",
-        "seller": { "@type": "Organization", "name": "Escova Premium" }
-      }
-    }
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9b30ff",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#0a0a0a",
+                        "background-darker": "#050505",
+                        "accent-gold": "#d4af37",
+                        "soft-purple": "#2d1b4d",
+                        "cta-green": "#10b981",
+                        "cta-green-hover": "#059669",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    }
+                },
+            },
+        }
     </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .glass-luxury {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 0.5px solid rgba(212, 175, 55, 0.3);
+            }
+            .glass-card {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 1rem;
+            }
+            .border-gold-hairline {
+                border: 0.5px solid rgba(212, 175, 55, 0.4);
+            }
+            .border-purple-hairline {
+                border: 0.5px solid rgba(155, 48, 255, 0.4);
+            }
+            .btn-gold-satin {
+                background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #b8860b 100%);
+                color: #000;
+                box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            }
+            .btn-purple-satin {
+                background: linear-gradient(135deg, #9b30ff 0%, #c17fff 100%);
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(155, 48, 255, 0.4);
+            }
+            .btn-green-satin {
+                background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #059669 100%);
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+            }
+            .text-gold-gradient {
+                background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #b8860b 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .text-purple-gradient {
+                background: linear-gradient(135deg, #9b30ff 0%, #c17fff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .placeholder-box {
+                border: 1px solid rgba(212, 175, 55, 0.2);
+                background: rgba(155, 48, 255, 0.05);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 1rem;
+            }
+            .section-spacing {
+                @apply py-12 md:py-16;
+            }
+            .container-max {
+                @apply max-w-[1200px mx-auto px-6 md:px-8;
+            }
+            body {
+                @apply leading-[1.6];
+            }
+            p {
+                @apply max-w-[70ch] mx-auto md:mx-0;
+            }
+            .section-title {
+                @apply text-slate-100 text-2xl md:text-4xl font-bold uppercase tracking-wider text-center mb-8 md:mb-10;
+            }
+            .section-divider {
+                @apply h-[2px] w-16 bg-accent-gold mx-auto mt-4 mb-8;
+            }
+        }
+    </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100dvh;
+        }
+    </style>
 </head>
 
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6BSPZ8S" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- Barra de Progresso de Leitura -->
-  <div class="scroll-progress" id="scroll-progress"></div>
-
-  <div class="top-spacer" id="top-spacer"></div>
-
-  <!-- ============================
-       SEÇÃO 2 — Hero Principal
-       ============================ -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__inner">
-
-        <!-- Headline -->
-        <h1 class="hero__headline">
-          Diga Adeus ao Frizz.
-          <span class="highlight">Liso Perfeito em Minutos.</span>
-        </h1>
-
-        <!-- Sub-headline -->
-        <h2 class="hero__subheadline">
-          Desembaraça, modela e alisa na mesma passada — sem queimar, sem fumaça, sem mecha por mecha.
-        </h2>
-
-        <!-- Bullets -->
-        <ul class="hero__bullets">
-          <li>
-            <span class="bullet-icon">✔</span>
-            Tecnologia PTC Avançada que distribui o calor uniformemente
-          </li>
-          <li>
-            <span class="bullet-icon">✔</span>
-            Pente inteligente que desembaraça enquanto alisa
-          </li>
-          <li>
-            <span class="bullet-icon">✔</span>
-            Exterior frio ao toque: 100% segura e não queima a pele
-          </li>
-        </ul>
-
-        <!-- Vídeo VSL (Lazy Load Facade) -->
-        <div class="vsl-facade" id="hero-vsl" onclick="loadVSL(this)">
-          <img src="https://picsum.photos/seed/brush-vsl/800/450"
-            alt="Assista ao vídeo de apresentação da Escova Alisadora" class="vsl-facade__thumb" loading="lazy">
-          <button class="vsl-facade__play" aria-label="Reproduzir vídeo">
-            <svg viewBox="0 0 68 48" width="68" height="48">
-              <path class="vsl-facade__play-bg"
-                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
-                fill="#212121" fill-opacity="0.85" />
-              <path d="M45 24L27 14v20" fill="#fff" />
-            </svg>
-          </button>
+<body class="bg-background-dark font-display text-slate-100 antialiased relative">
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent-gold/10 rounded-full blur-[120px]">
         </div>
-
-        <!-- CTA com Preço -->
-        <div class="hero__cta-area">
-          <div class="hero__price-box">
-            <span class="price-old">De R$ 197,00</span>
-            <span class="price-current">Por apenas <span class="price-currency">R$</span> <span
-                class="price-value">97,00</span></span>
-            <span class="price-saving">🔥 Você economiza R$ 100,00!</span>
-          </div>
-          <a href="#pricing-section" class="cta-btn cta-btn--pulse" id="cta-hero">
-            VER OFERTAS ESPECIAIS →
-          </a>
-          <div class="cta-microcopy cta-microcopy--light">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
-            </svg>
-            <span>Você só paga quando receber em casa</span>
-          </div>
-          <div class="trust-line">
-            <span class="trust-item">🚚 Frete grátis</span>
-            <span class="trust-item">💳 Você paga só na entrega</span>
-            <span class="trust-item">🛡️ 7 dias para testar em casa</span>
-          </div>
-          <div class="urgency-counter">
-            <span class="urgency-counter__dot"></span>
-            <span id="hero-viewers">47 pessoas estão vendo este produto agora</span>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 3 — Identificação com a Dor
-       ============================ -->
-  <section class="pain-section section-padding" id="pain-section">
-    <div class="container">
-      <h2 class="section-title reveal">Você se identifica com alguma dessas situações?</h2>
-
-      <div class="pain-list">
-        <div class="pain-list__item reveal">
-          <span class="pain-list__icon">❌</span>
-          Perde horas alisando mecha por mecha e o resultado dura pouco
-        </div>
-        <div class="pain-list__item reveal">
-          <span class="pain-list__icon">❌</span>
-          Tem medo de queimar os fios com chapinhas superaquecidas e agressivas
-        </div>
-        <div class="pain-list__item reveal">
-          <span class="pain-list__icon">❌</span>
-          Frustrada com o frizz que não desaparece de jeito nenhum
-        </div>
-        <div class="pain-list__item reveal">
-          <span class="pain-list__icon">❌</span>
-          Gasta uma fortuna no salão e em produtos alisadores que não funcionam
-        </div>
-        <div class="pain-list__item reveal">
-          <span class="pain-list__icon">❌</span>
-          Dificuldade de arrumar o cabelo rápido antes do trabalho ou compromissos
-        </div>
-      </div>
-
-      <p class="pain-section__closing reveal">
-        Se você se viu em pelo menos um desses pontos, a <strong>Escova Alisadora 3 em 1</strong> foi feita
-        para você.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 4 — Apresentação do Produto
-       ============================ -->
-  <section class="product-section section-padding" id="product-section">
-    <div class="container">
-      <div class="product-grid">
-        <!-- Coluna esquerda — Foto Principal -->
-        <div class="product__image-placeholder reveal" id="product-photo">
-          <img src="https://picsum.photos/seed/brush-principal/800/800" alt="Escova Alisadora 3 em 1 - Foto principal"
-            width="800" height="800" loading="lazy">
-        </div>
-
-        <!-- Coluna direita — Informações -->
-        <div class="product__info reveal">
-          <h2>Conheça a Escova Alisadora 3 em 1</h2>
-          <p>
-            A Escova possui um <strong>pente especial embutido</strong>. Esqueça ter que separar mechas —
-            passe como se estivesse penteando e ela faz todo o trabalho de forma imediata.
-          </p>
-          <p>
-            A tecnologia <strong>PTC</strong> mantém a temperatura sempre estável e constante. O calor fica
-            concentrado <em>dentro</em> dos dentes: a parte exterior não queima a pele, assim você pode
-            fazer o alisamento 100% segura.
-          </p>
-          <p>
-            Funciona também em cabelo úmido, serve para as crianças e até mesmo para homens
-            poderem alinhar a barba de forma rápida.
-          </p>
-          <p>
-            Seu dia a dia mais veloz e prático: sem fumaça, sem cheiro de queimado e com muito brilho espelhado.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 5 — Tecnologia e Materiais
-       ============================ -->
-  <section class="tech-section section-padding" id="tech-section">
-    <div class="container">
-      <h2 class="section-title reveal">A Tecnologia Por Dentro</h2>
-
-      <div class="tech-grid">
-        <div class="tech-card reveal">
-          <span class="tech-card__icon">🌡️</span>
-          <h3>Tecnologia PTC</h3>
-          <p>
-            Temperatura inteligente e constante. Atinge potência máxima em minutos e entrega um liso uniforme sem picos
-            de calor extremos.
-          </p>
-        </div>
-        <div class="tech-card reveal">
-          <span class="tech-card__icon">🛡️</span>
-          <h3>Exterior Seguro</h3>
-          <p>
-            O calor fica 100% isolado no interior dos dentes. A parte de fora não agride a pele, sem risco nenhum de
-            queimaduras.
-          </p>
-        </div>
-        <div class="tech-card reveal">
-          <span class="tech-card__icon">✨</span>
-          <h3>Design 3 em 1</h3>
-          <p>
-            Desembaraça, modela as pontas e alisa de verdade na mesma passada. Totalmente bivolt para você usar direto
-            na tomada sem preocupação.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 6 — Benefícios (Grid de 6 Cards)
-       ============================ -->
-  <section class="benefits-section section-padding" id="benefits-section">
-    <div class="container">
-      <h2 class="section-title reveal">Por que ela é diferente de tudo?</h2>
-
-      <div class="benefits-grid">
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">⚡</span>
-          <h3>Extremamente Rápida</h3>
-          <p>
-            Seu pente largo abrange bem mais cabelo que qualquer chapinha. Resultado alcançado na metade do tempo.
-          </p>
-        </div>
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">💧</span>
-          <h3>Segura no Úmido</h3>
-          <p>
-            Diferente das pranchas comuns que fritam o fio, a Escova seca suavemente, respeitando cabelos úmidos.
-          </p>
-        </div>
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">✨</span>
-          <h3>Brilho Intenso</h3>
-          <p>
-            Ela fecha as cutículas, ao invés de queimá-las. Seu cabelo ganha brilho espelhado de salão e sedosidade.
-          </p>
-        </div>
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">👨‍👩‍👧</span>
-          <h3>Para a Família</h3>
-          <p>
-            Sendo fria por fora, é ideal para o cabelo fino das crianças e também usada na barba masculina.
-          </p>
-        </div>
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">🎛️</span>
-          <h3>Controle Total</h3>
-          <p>
-            Dispõe de botões de controle de temperatura intuitivos (+ e -). Controle exato para cada tipo de fio
-            capilar.
-          </p>
-        </div>
-        <div class="benefit-card reveal">
-          <span class="benefit-card__icon">💨</span>
-          <h3>Sem Fumaça</h3>
-          <p>
-            A estrutura de cerdas evapora o pouco de umidade de forma super limpa, eliminando qualquer cheiro de
-            queimado.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 7 — Vídeo Demonstração
-       ============================ -->
-  <section class="demo-section section-padding" id="demo-section">
-    <div class="container">
-      <h2 class="section-title reveal">Veja como é fácil utilizar na prática</h2>
-
-      <div class="demo-video-wrapper reveal">
-        <div class="vsl-facade" id="demo-video" onclick="loadDemo(this)">
-          <img src="https://picsum.photos/seed/brush-demo/800/450" alt="Veja como funciona a Escova Alisadora"
-            class="vsl-facade__thumb" loading="lazy">
-          <button class="vsl-facade__play" aria-label="Reproduzir demonstração">
-            <svg viewBox="0 0 68 48" width="68" height="48">
-              <path class="vsl-facade__play-bg"
-                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
-                fill="#212121" fill-opacity="0.85" />
-              <path d="M45 24L27 14v20" fill="#fff" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 8 — Galeria
-       ============================ -->
-  <section class="gallery-section section-padding" id="gallery-section">
-    <div class="container">
-      <h2 class="section-title reveal">Depoimentos de clientes por mensagens</h2>
-
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" id="gallery-1" onclick="openLightbox(this)">
-          <img src="https://picsum.photos/seed/brush-detalhe1/400/400" alt="Detalhe 1 - Escova Alisadora"
-            loading="lazy">
-        </div>
-        <div class="gallery-item reveal" id="gallery-2" onclick="openLightbox(this)">
-          <img src="https://picsum.photos/seed/brush-detalhe2/400/400" alt="Detalhe 2 - Escova Alisadora"
-            loading="lazy">
-        </div>
-        <div class="gallery-item reveal" id="gallery-3" onclick="openLightbox(this)">
-          <img src="https://picsum.photos/seed/brush-detalhe3/400/400" alt="Detalhe 3 - Escova Alisadora"
-            loading="lazy">
-        </div>
-        <div class="gallery-item reveal" id="gallery-4" onclick="openLightbox(this)">
-          <img src="https://picsum.photos/seed/brush-detalhe4/400/400" alt="Detalhe 4 - Escova Alisadora"
-            loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-      <button class="lightbox__close" aria-label="Fechar">&times;</button>
-      <img id="lightbox-img" src="" alt="Ampliação">
-    </div>
-  </section>
-
-
-
-  <!-- ============================
-       SEÇÃO 9 — Depoimentos em Vídeo
-       ============================ -->
-  <section class="video-testimonials-section section-padding" id="video-testimonials-section">
-    <div class="container">
-      <h2 class="section-title reveal">Assista o que estão falando</h2>
-
-      <div class="video-testimonials-grid video-testimonials-grid--single">
-        <div class="vsl-facade reveal" id="video-testimonial-1" onclick="loadDepoimento(this)">
-          <img src="https://picsum.photos/seed/brush-depoimento/800/450"
-            alt="Depoimento de cliente sobre a Escova Alisadora" class="vsl-facade__thumb" loading="lazy">
-          <button class="vsl-facade__play" aria-label="Reproduzir depoimento">
-            <svg viewBox="0 0 68 48" width="68" height="48">
-              <path class="vsl-facade__play-bg"
-                d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
-                fill="#212121" fill-opacity="0.85" />
-              <path d="M45 24L27 14v20" fill="#fff" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ============================
-       SEÇÃO 10 — Comparação VS
-       ============================ -->
-  <section class="comparison-section section-padding" id="comparison-section">
-    <div class="container">
-      <h2 class="section-title reveal">Escova vs. Alternativas Comuns</h2>
-      <div class="stats-bar reveal">
-        <div class="stats-bar__item">
-          <strong>+11.450</strong>
-          <span>pedidos já entregues</span>
-        </div>
-        <div class="stats-bar__divider"></div>
-        <div class="stats-bar__item">
-          <strong>97%</strong>
-          <span>taxa de aprovação capilar</span>
-        </div>
-        <div class="stats-bar__divider"></div>
-        <div class="stats-bar__item">
-          <strong>⭐ 4,9/5</strong>
-          <span>avaliação média dos clientes</span>
-        </div>
-      </div>
-      <div class="comparison-grid reveal">
-        <div class="comparison-col comparison-col--bad">
-          <h3>❌ Chapinhas Comuns</h3>
-          <ul>
-            <li>Queimam a sua pele quando encosta</li>
-            <li>Exigem desembaraçar os fios perfeitamente antes</li>
-            <li>Achatam muito a raiz, dando aspecto esticado e sem vida</li>
-            <li>Lentas: precisam separar mechas minúsculas de cada vez</li>
-            <li>Faz fumaça e cheiro ruim nos cabelos úmidos</li>
-          </ul>
-        </div>
-        <div class="comparison-col comparison-col--good">
-          <h3>✅ Escova 3 em 1</h3>
-          <ul>
-            <li>Exterior seguro e protetor — o calor é 100% interno</li>
-            <li>O pente já embutido desembaraça na exata hora da passada</li>
-            <li>Mantém a maciez, o volume natural e a vida dos fios</li>
-            <li>Veloz: pega seções inteiras de cabelo de uma só vez</li>
-            <li>Sem fumaça: respeita tranquilamente a umidade</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 11 — Kits e Oferta (3 Planos)
-       ============================ -->
-  <section class="pricing-section section-padding" id="pricing-section">
-    <div class="container">
-      <h2 class="section-title reveal">Escolha o seu Kit</h2>
-      <p class="pricing-intro reveal">
-        Todas as opções com frete grátis, pagamento somente na entrega e 7 dias
-        para testar em casa com toda a segurança.
-      </p>
-
-      <div class="pricing-grid">
-        <!-- Plano 1 -->
-        <div class="pricing-card reveal" id="plan-1">
-          <h3>1x Escova Alisadora</h3>
-          <p>Ideal para uso individual — o básico perfeito.</p>
-          <div class="pricing-card__prices">
-            <span class="pricing-card__old-price">De <s>R$ 197,00</s></span>
-            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 97,00</span>
-            <span class="pricing-card__saving">🔥 Economia de R$ 100,00</span>
-          </div>
-          <a href="https://entrega.logzz.com.br/pay/memg2d087/wfrca-1-unidade-r-97" class="cta-btn" id="cta-plan-1">
-            QUERO 1 UNIDADE
-          </a>
-          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
-        </div>
-
-        <!-- Plano 2 (Destaque) -->
-        <div class="pricing-card pricing-card--featured reveal" id="plan-3">
-          <span class="pricing-card__badge">⭐ Mais Popular</span>
-          <span class="pricing-card__best-value">💡 Melhor custo por unidade</span>
-          <h3>3x Escova Alisadora</h3>
-          <p>Melhor custo-benefício — o estoque perfeito para presentear as amigas.</p>
-          <div class="pricing-card__prices">
-            <span class="pricing-card__old-price">De <s>R$ 441,00</s></span>
-            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 200,00</span>
-            <span class="pricing-card__saving">🔥 Apenas R$ 66,66 por peça!</span>
-          </div>
-          <a href="https://entrega.logzz.com.br/pay/memg2d087/3-menor-preco" class="cta-btn cta-btn--pulse"
-            id="cta-plan-2">
-            QUERO O KIT COM 3
-          </a>
-          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
-        </div>
-
-        <!-- Plano 3 -->
-        <div class="pricing-card reveal" id="plan-2">
-          <h3>2x Escova Alisadora</h3>
-          <p>Para dividir com uma parente ou amiga próxima.</p>
-          <div class="pricing-card__prices">
-            <span class="pricing-card__old-price">De <s>R$ 294,00</s></span>
-            <span class="pricing-card__new-price"><span class="price-currency">R$</span> 137,00</span>
-            <span class="pricing-card__saving">🔥 Apenas R$ 68,50 por peça!</span>
-          </div>
-          <a href="https://entrega.logzz.com.br/pay/memg2d087/duas-137" class="cta-btn" id="cta-plan-3">
-            QUERO O KIT COM 2
-          </a>
-          <span class="pricing-card__cod">📦 Pague só na entrega — sem risco</span>
-        </div>
-      </div>
-      <div class="urgency-counter urgency-counter--dark" style="max-width: 500px; margin: var(--space-xl) auto 0;">
-        <span class="urgency-counter__dot"></span>
-        <span>⚡ Oferta por tempo limitado estoque reduzido</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 12 — Garantia
-       ============================ -->
-  <section class="guarantee-section section-padding" id="guarantee-section">
-    <div class="container">
-      <div class="guarantee-grid">
-        <!-- Selo de garantia -->
-        <div class="guarantee__seal-placeholder reveal" id="guarantee-seal">
-          <img src="https://picsum.photos/seed/garantia/300/300" alt="Selo de garantia 7 dias" width="200" height="200">
-        </div>
-
-        <!-- Conteúdo -->
-        <div class="guarantee__content reveal">
-          <h2>Sua compra tem risco zero</h2>
-          <p>
-            Você tem 7 dias, contados a partir do recebimento da escova alisadora, para testar a praticidade
-            e ver com os próprios olhos a mudança e brilho no seu cabelo.
-          </p>
-          <p>
-            Se nesse período você sentir que a Escova Ortopédica não te ajudou como esperava,
-            basta entrar em contato e vamos te orientar sobre a devolução do dinheiro imediata,
-            conforme o Código de Defesa do Consumidor.
-          </p>
-          <div class="guarantee__badges">
-            <span>🛡️ Risco Zero</span>
-            <span>💰 Sem burocracia</span>
-            <span>📞 Suporte rápido</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 13 — FAQ (Accordion)
-       ============================ -->
-  <section class="faq-section section-padding" id="faq-section">
-    <div class="container">
-      <h2 class="section-title reveal">Perguntas Frequentes</h2>
-
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-1">
-            <span>Serve para qual tipo de cabelo?</span>
-            <span class="faq-item__icon">+</span>
-          </button>
-          <div class="faq-item__answer">
-            <div class="faq-item__answer-inner">
-              Funciona perfeitamente para todos os tipos de fios: finos, grossos, cacheados, crespos e ondulados.
-              O sistema de pente desembaraça sem precisar pranchar o fio forte.
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <main class="flex flex-col relative z-10 w-full">
+            <section class="relative section-spacing pt-8 md:pt-12">
+                <div class="container-max flex flex-col items-center text-center gap-6">
+                    <div class="flex gap-3 justify-center flex-wrap mb-2">
+                        <span
+                            class="px-3 py-1.5 rounded-full text-[10px] md:text-xs font-bold bg-transparent text-primary border border-primary/40 uppercase tracking-widest shadow-[0_0_10px_rgba(155,48,255,0.2)]">3
+                            em 1 Bivolt</span>
+                        <span
+                            class="px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black bg-gradient-to-r from-accent-gold via-[#f1d592] to-accent-gold text-black uppercase tracking-[0.1em] shadow-lg shadow-accent-gold/30 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px] md:text-[16px] font-bold">payments</span>
+                            Pague na Entrega
+                        </span>
+                    </div>
+                    <h1
+                        class="text-slate-100 text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
+                        Diga Adeus ao Frizz. <br class="hidden md:block" /> <span class="text-gold-gradient">Liso
+                            Perfeito</span>
+                    </h1>
+                    <p class="text-slate-400 text-sm md:text-lg mx-auto text-center max-w-2xl">
+                        A tecnologia profissional no conforto da sua casa. Resultados de salão em minutos, sem danificar
+                        os fios.
+                    </p>
+                    <div
+                        class="w-full max-w-3xl aspect-video glass-luxury rounded-3xl flex flex-col items-center justify-center border-gold-hairline relative overflow-hidden placeholder-box shadow-[0_0_30px_rgba(212,175,55,0.15)] mt-4 mb-2">
+                        <span
+                            class="material-symbols-outlined text-accent-gold text-6xl mb-4 drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">play_circle</span>
+                        <p class="text-accent-gold font-bold uppercase tracking-widest text-xs mb-2">Vídeo de Venda</p>
+                        <p class="text-slate-500 text-[10px]">Apresentação Luxury Edition</p>
+                    </div>
+                    <div
+                        class="flex flex-col gap-4 text-left mx-auto glass-card p-6 w-full max-w-lg mb-6 shadow-[0_0_20px_rgba(155,48,255,0.1)]">
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="material-symbols-outlined text-cta-green mt-1 drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                            <p class="text-sm md:text-base text-slate-200 m-0 font-medium">Alisamento rápido e seguro em
+                                poucos minutos.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="material-symbols-outlined text-cta-green mt-1 drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                            <p class="text-sm md:text-base text-slate-200 m-0 font-medium">Protege contra queimaduras e
+                                ressecamento.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span
+                                class="material-symbols-outlined text-cta-green mt-1 drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                            <p class="text-sm md:text-base text-slate-200 m-0 font-medium">Efeito salão em casa com
+                                facilidade.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center w-full max-w-md mx-auto gap-4">
+                        <a class="w-full flex items-center justify-center gap-2 h-16 px-8 rounded-xl btn-gold-satin text-black text-sm md:text-base font-bold tracking-[0.15em] transition-transform hover:-translate-y-1 active:scale-95 uppercase"
+                            href="#pricing">
+                            VER OFERTAS ESPECIAIS
+                            <span class="material-symbols-outlined text-[20px]">south</span>
+                        </a>
+                        <p
+                            class="text-accent-gold/90 text-xs md:text-sm font-bold tracking-wide uppercase flex items-center justify-center gap-2 drop-shadow-[0_0_5px_rgba(212,175,55,0.3)]">
+                            <span class="material-symbols-outlined text-[14px]">verified</span> Pague só quando receber
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing bg-white/5 border-y border-white/5">
+                <div class="container-max">
+                    <h2 class="section-title"><span class="text-gold-gradient">Você se identifica</span> com alguma
+                        dessas situações?</h2>
+                    <div class="section-divider"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-10">
+                        <div
+                            class="glass-card border-red-500/30 p-6 flex items-start gap-4 hover:border-red-500/50 transition-colors bg-gradient-to-br from-red-500/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-red-500 text-2xl shrink-0 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">close</span>
+                            <p class="text-slate-300 text-sm m-0">Acorda com o cabelo cheio de frizz e sem forma
+                                definida.</p>
+                        </div>
+                        <div
+                            class="glass-card border-red-500/30 p-6 flex items-start gap-4 hover:border-red-500/50 transition-colors bg-gradient-to-br from-red-500/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-red-500 text-2xl shrink-0 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">close</span>
+                            <p class="text-slate-300 text-sm m-0">Queima o cabelo ou o couro cabeludo com chapinhas
+                                tradicionais.</p>
+                        </div>
+                        <div
+                            class="glass-card border-red-500/30 p-6 flex items-start gap-4 hover:border-red-500/50 transition-colors bg-gradient-to-br from-red-500/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-red-500 text-2xl shrink-0 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">close</span>
+                            <p class="text-slate-300 text-sm m-0">Gasta muito tempo de manhã tentando arrumar o cabelo.
+                            </p>
+                        </div>
+                        <div
+                            class="glass-card border-red-500/30 p-6 flex items-start gap-4 hover:border-red-500/50 transition-colors bg-gradient-to-br from-red-500/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-red-500 text-2xl shrink-0 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]">close</span>
+                            <p class="text-slate-300 text-sm m-0">Fios ressecados e quebradiços pelo uso excessivo de
+                                calor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="py-10 bg-gradient-to-r from-primary/10 via-primary/20 to-primary/10 border-y border-primary/30 shadow-[0_0_30px_rgba(155,48,255,0.1)]">
+                <div class="container-max text-center">
+                    <p class="text-lg md:text-xl font-medium text-slate-200 max-w-3xl mx-auto">
+                        Se você se viu em pelo menos um desses pontos, a <strong
+                            class="text-gold-gradient text-xl">Escova Alisadora 3 em 1</strong> foi feita para você.
+                    </p>
+                </div>
+            </section>
+            <section class="section-spacing">
+                <div class="container-max flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                    <div class="w-full lg:w-1/2">
+                        <div
+                            class="w-full aspect-square glass-luxury rounded-3xl flex flex-col items-center justify-center border-purple-hairline relative overflow-hidden placeholder-box shadow-[0_0_40px_rgba(155,48,255,0.15)] bg-gradient-to-br from-primary/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-5xl mb-4 drop-shadow-[0_0_10px_rgba(155,48,255,0.5)]">image</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-xs mb-2">Imagem do Produto
+                            </p>
+                            <p class="text-slate-500 text-[10px]">High Resolution</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-100 uppercase tracking-widest mb-2">Conheça
+                            a <span class="text-gold-gradient">Escova Alisadora</span></h2>
+                        <p class="text-slate-300 text-base md:text-lg mb-4 font-medium">
+                            Desenvolvida para quem não aceita mais conviver com o frizz e a demora. Segurança e brilho
+                            nos seus fios no dia a dia.
+                        </p>
+                        <ul class="flex flex-col gap-5 text-slate-300">
+                            <li
+                                class="flex items-start gap-4 glass-card p-4 border-l-[3px] border-l-primary bg-gradient-to-r from-primary/5 to-transparent">
+                                <span
+                                    class="material-symbols-outlined text-primary mt-0.5 drop-shadow-[0_0_5px_rgba(155,48,255,0.5)]">check_circle</span>
+                                <span><strong class="text-slate-100">Tecnologia PTC:</strong> Aquecimento rápido e
+                                    constante, sem picos de calor que danificam o fio.</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-4 glass-card p-4 border-l-[3px] border-l-accent-gold bg-gradient-to-r from-accent-gold/5 to-transparent">
+                                <span
+                                    class="material-symbols-outlined text-accent-gold mt-0.5 drop-shadow-[0_0_5px_rgba(212,175,55,0.5)]">check_circle</span>
+                                <span><strong class="text-slate-100">Revestimento em Cerâmica:</strong> Desliza
+                                    suavemente, distribuindo o calor de forma uniforme.</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-4 glass-card p-4 border-l-[3px] border-l-primary bg-gradient-to-r from-primary/5 to-transparent">
+                                <span
+                                    class="material-symbols-outlined text-primary mt-0.5 drop-shadow-[0_0_5px_rgba(155,48,255,0.5)]">check_circle</span>
+                                <span><strong class="text-slate-100">Design Anti-queimadura:</strong> Cerdas projetadas
+                                    para proteger o couro cabeludo e as mãos.</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-4 glass-card p-4 border-l-[3px] border-l-accent-gold bg-gradient-to-r from-accent-gold/5 to-transparent">
+                                <span
+                                    class="material-symbols-outlined text-accent-gold mt-0.5 drop-shadow-[0_0_5px_rgba(212,175,55,0.5)]">check_circle</span>
+                                <span><strong class="text-slate-100">Íons Negativos:</strong> Neutralizam a estática,
+                                    eliminando o frizz e trazendo brilho intenso.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing bg-white/5 border-y border-white/5">
+                <div class="container-max">
+                    <h2 class="section-title"><span class="text-purple-gradient">Tecnologia e materiais</span> pensados
+                        para o seu conforto</h2>
+                    <div class="section-divider"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-10">
+                        <div
+                            class="glass-card p-8 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform border-t-[4px] border-t-primary shadow-[0_10px_30px_rgba(155,48,255,0.1)] bg-gradient-to-b from-primary/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-5xl drop-shadow-[0_0_10px_rgba(155,48,255,0.5)]">thermostat</span>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">Tecnologia PTC</h4>
+                            <p class="text-slate-400 text-sm m-0">Aquecimento super rápido e manutenção de temperatura
+                                inteligente para resultados uniformes.</p>
+                        </div>
+                        <div
+                            class="glass-card p-8 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform border-t-[4px] border-t-accent-gold shadow-[0_10px_30px_rgba(212,175,55,0.1)] bg-gradient-to-b from-accent-gold/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-5xl drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">tune</span>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">5 Níveis de Calor</h4>
+                            <p class="text-slate-400 text-sm m-0">Controle preciso de temperatura de 130°C a 210°C,
+                                adaptável a qualquer tipo de cabelo.</p>
+                        </div>
+                        <div
+                            class="glass-card p-8 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform border-t-[4px] border-t-primary shadow-[0_10px_30px_rgba(155,48,255,0.1)] bg-gradient-to-b from-primary/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-5xl drop-shadow-[0_0_10px_rgba(155,48,255,0.5)]">security</span>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">Material Premium</h4>
+                            <p class="text-slate-400 text-sm m-0">Construção robusta com cerdas de cerâmica turmalina e
+                                exterior resistente ao calor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing">
+                <div class="container-max">
+                    <h2 class="section-title">Por que a <span class="text-gold-gradient">Escova Alisadora</span> é
+                        diferente?</h2>
+                    <div class="section-divider"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-accent-gold/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-3xl drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">bolt</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Praticidade e Rapidez
+                            </h4>
+                            <p class="text-slate-400 text-sm m-0">Alise mechas maiores de uma só vez graças ao design de
+                                escova, economizando metade do seu tempo.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-primary/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-3xl drop-shadow-[0_0_8px_rgba(155,48,255,0.5)]">shield</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Proteção Total</h4>
+                            <p class="text-slate-400 text-sm m-0">Diga adeus às queimaduras na testa ou orelhas. O calor
+                                fica contido na parte interna das cerdas.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-accent-gold/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-3xl drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">spa</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Efeito Natural</h4>
+                            <p class="text-slate-400 text-sm m-0">Cabelos lisos com movimento e volume natural, sem
+                                aquele aspecto "espichado" da chapinha.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-primary/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-3xl drop-shadow-[0_0_8px_rgba(155,48,255,0.5)]">air</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Menos Frizz</h4>
+                            <p class="text-slate-400 text-sm m-0">Emissão de íons negativos sela as cutículas
+                                instantaneamente.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-accent-gold/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-3xl drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">face</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Versatilidade</h4>
+                            <p class="text-slate-400 text-sm m-0">Perfeita para finalizar pontas, modelar franjas ou
+                                alisar barbas volumosas.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 flex flex-col gap-3 hover:border-primary/30 transition-colors bg-gradient-to-br from-white/5 to-transparent">
+                            <span
+                                class="material-symbols-outlined text-primary text-3xl drop-shadow-[0_0_8px_rgba(155,48,255,0.5)]">luggage</span>
+                            <h4 class="font-bold text-slate-100 uppercase text-sm tracking-wide">Design Portátil</h4>
+                            <p class="text-slate-400 text-sm m-0">Bivolt e leve, perfeita para levar na bolsa ou em
+                                viagens.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing bg-white/5 border-y border-white/5">
+                <div class="container-max flex flex-col items-center">
+                    <h2 class="section-title">Veja como utilizar <span class="text-purple-gradient">na prática</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                    <div
+                        class="w-full max-w-2xl aspect-video glass-luxury rounded-3xl flex flex-col items-center justify-center border-gold-hairline relative overflow-hidden placeholder-box mb-10 shadow-[0_0_30px_rgba(212,175,55,0.15)]">
+                        <span
+                            class="material-symbols-outlined text-accent-gold text-6xl mb-4 drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">play_arrow</span>
+                        <p class="text-accent-gold font-bold uppercase tracking-widest text-xs mb-2">Vídeo Tutorial</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+                        <div
+                            class="glass-card p-6 text-center flex flex-col items-center gap-4 bg-gradient-to-b from-primary/5 to-transparent">
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-2xl border border-primary/40 shadow-[0_0_15px_rgba(155,48,255,0.2)]">
+                                1</div>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">Prepare</h4>
+                            <p class="text-sm text-slate-400">Desembarace os cabelos limpos e secos.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 text-center flex flex-col items-center gap-4 bg-gradient-to-b from-accent-gold/5 to-transparent">
+                            <div
+                                class="w-14 h-14 rounded-full bg-accent-gold/20 text-accent-gold flex items-center justify-center font-bold text-2xl border border-accent-gold/40 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                                2</div>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">Aqueça</h4>
+                            <p class="text-sm text-slate-400">Ligue e selecione a temperatura ideal.</p>
+                        </div>
+                        <div
+                            class="glass-card p-6 text-center flex flex-col items-center gap-4 bg-gradient-to-b from-primary/5 to-transparent">
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-2xl border border-primary/40 shadow-[0_0_15px_rgba(155,48,255,0.2)]">
+                                3</div>
+                            <h4 class="font-bold text-slate-100 text-lg uppercase tracking-wide">Deslize</h4>
+                            <p class="text-sm text-slate-400">Passe a escova lentamente desde a raiz.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing">
+                <div class="container-max">
+                    <h2 class="section-title">Depoimentos de <span class="text-gold-gradient">clientes</span></h2>
+                    <div class="section-divider"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 max-w-3xl mx-auto">
+                        <div
+                            class="glass-card aspect-square border-t-[3px] border-t-accent-gold bg-gradient-to-br from-white/5 to-transparent flex flex-col items-center justify-center overflow-hidden placeholder-box relative shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-4xl mb-2 drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">photo_camera</span>
+                            <p class="text-accent-gold font-bold uppercase tracking-widest text-[10px] md:text-xs">
+                                Square Photo</p>
+                            <p class="text-slate-500 text-[8px] md:text-[10px]">1080x1080px</p>
+                        </div>
+                        <div
+                            class="glass-card aspect-square border-t-[3px] border-t-primary bg-gradient-to-br from-white/5 to-transparent flex flex-col items-center justify-center overflow-hidden placeholder-box relative shadow-[0_0_15px_rgba(155,48,255,0.1)]">
+                            <span
+                                class="material-symbols-outlined text-primary text-4xl mb-2 drop-shadow-[0_0_8px_rgba(155,48,255,0.5)]">photo_camera</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-[10px] md:text-xs">Square
+                                Photo</p>
+                            <p class="text-slate-500 text-[8px] md:text-[10px]">1080x1080px</p>
+                        </div>
+                        <div
+                            class="glass-card aspect-square border-t-[3px] border-t-accent-gold bg-gradient-to-br from-white/5 to-transparent flex flex-col items-center justify-center overflow-hidden placeholder-box relative shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                            <span
+                                class="material-symbols-outlined text-accent-gold text-4xl mb-2 drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">photo_camera</span>
+                            <p class="text-accent-gold font-bold uppercase tracking-widest text-[10px] md:text-xs">
+                                Square Photo</p>
+                            <p class="text-slate-500 text-[8px] md:text-[10px]">1080x1080px</p>
+                        </div>
+                        <div
+                            class="glass-card aspect-square border-t-[3px] border-t-primary bg-gradient-to-br from-white/5 to-transparent flex flex-col items-center justify-center overflow-hidden placeholder-box relative shadow-[0_0_15px_rgba(155,48,255,0.1)]">
+                            <span
+                                class="material-symbols-outlined text-primary text-4xl mb-2 drop-shadow-[0_0_8px_rgba(155,48,255,0.5)]">photo_camera</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-[10px] md:text-xs">Square
+                                Photo</p>
+                            <p class="text-slate-500 text-[8px] md:text-[10px]">1080x1080px</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-spacing bg-white/5 border-y border-white/5">
+                <div class="container-max flex flex-col items-center">
+                    <h2 class="section-title text-center">Por que ela é diferente das <span
+                            class="text-purple-gradient">chapinhas comuns</span>?</h2>
+                    <div class="section-divider"></div>
+                    <div
+                        class="w-full max-w-4xl glass-luxury rounded-2xl overflow-hidden border-gold-hairline mt-6 shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+                        <div
+                            class="grid grid-cols-2 bg-gradient-to-r from-accent-gold/10 to-transparent p-4 md:p-6 border-b border-accent-gold/20">
+                            <div
+                                class="text-center font-bold text-accent-gold text-sm md:text-base uppercase tracking-widest drop-shadow-[0_0_5px_rgba(212,175,55,0.5)]">
+                                Escova Premium</div>
+                            <div
+                                class="text-center font-bold text-slate-400 text-sm md:text-base uppercase tracking-widest">
+                                Chapinha Comum</div>
+                        </div>
+                        <div class="divide-y divide-white/10 text-xs md:text-sm bg-black/20">
+                            <div class="grid grid-cols-2 p-4 md:p-6 gap-4">
+                                <div
+                                    class="text-center text-slate-200 font-medium flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-cta-green text-[22px] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                                    Não queima o fio / Sem Fumaça</div>
+                                <div
+                                    class="text-center text-slate-500 italic flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-red-500/60 text-[22px]">cancel</span>
+                                    Calor excessivo agride</div>
+                            </div>
+                            <div class="grid grid-cols-2 p-4 md:p-6 gap-4 bg-white/5">
+                                <div
+                                    class="text-center text-slate-200 font-medium flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-cta-green text-[22px] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                                    Pente Embutido / Mechas grandes</div>
+                                <div
+                                    class="text-center text-slate-500 italic flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-red-500/60 text-[22px]">cancel</span>
+                                    Demorado / Mecha fina por Mecha fina</div>
+                            </div>
+                            <div class="grid grid-cols-2 p-4 md:p-6 gap-4">
+                                <div
+                                    class="text-center text-slate-200 font-medium flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-cta-green text-[22px] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                                    Segura para raiz, testa e orelhas</div>
+                                <div
+                                    class="text-center text-slate-500 italic flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-red-500/60 text-[22px]">cancel</span>
+                                    Alto Risco de Queimadura</div>
+                            </div>
+                            <div class="grid grid-cols-2 p-4 md:p-6 gap-4 bg-white/5">
+                                <div
+                                    class="text-center text-slate-200 font-medium flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-cta-green text-[22px] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">check_circle</span>
+                                    Volume natural e movimento</div>
+                                <div
+                                    class="text-center text-slate-500 italic flex flex-col md:flex-row items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-red-500/60 text-[22px]">cancel</span>
+                                    Fios escorridos e sem vida</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="section-spacing bg-gradient-to-b from-primary/10 via-background-dark to-accent-gold/10 relative"
+                id="pricing">
+                <div class="container-max">
+                    <div class="text-center mb-10 md:mb-14">
+                        <h2 class="text-slate-100 text-3xl md:text-5xl font-bold uppercase tracking-widest mb-4"><span
+                                class="text-gold-gradient">Escolha</span> a melhor opção para você</h2>
+                        <div class="section-divider"></div>
+                        <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto font-medium">Todas as opções com
+                            frete grátis, pagamento somente na entrega e 7 dias para testar em casa com toda segurança.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-8 lg:gap-10 items-center max-w-3xl mx-auto">
+                        <div
+                            class="w-full glass-luxury p-8 md:p-10 rounded-[2rem] flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 md:gap-8 relative border-[3px] border-accent-gold shadow-[0_0_50px_rgba(212,175,55,0.2)] bg-gradient-to-br from-accent-gold/15 to-transparent z-10">
+                            <div
+                                class="absolute -top-4 left-1/2 -translate-x-1/2 btn-gold-satin text-black text-[10px] md:text-xs font-black px-6 md:px-8 py-2 rounded-full uppercase tracking-[0.2em] shadow-lg whitespace-nowrap border border-white/20">
+                                Mais Popular</div>
+                            <div
+                                class="absolute -top-4 right-4 md:right-8 bg-red-600 text-white text-[10px] font-black px-3 py-1.5 rounded-md uppercase tracking-wider shadow-lg transform rotate-3 border border-red-400">
+                                ECONOMIZE R$ 79</div>
+                            <div class="flex flex-col gap-1 flex-1 pt-6 md:pt-0">
+                                <h3 class="text-gold-gradient font-bold uppercase tracking-[0.1em] text-2xl">Kit Premium
+                                </h3>
+                                <p class="text-slate-200 text-sm font-bold uppercase tracking-widest mb-2">2 Unidades
+                                </p>
+                                <div
+                                    class="text-5xl md:text-6xl font-black text-slate-100 leading-none my-1 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+                                    R$ 179</div>
+                                <p class="text-slate-400 text-sm font-medium mb-3">ou 12x de R$ 17,97</p>
+                                <div
+                                    class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3">
+                                    <p
+                                        class="text-accent-gold text-xs uppercase font-bold tracking-widest flex items-center gap-1 drop-shadow-[0_0_5px_rgba(212,175,55,0.6)]">
+                                        <span class="material-symbols-outlined text-[16px]">local_shipping</span> Pague
+                                        na Entrega</p>
+                                    <p
+                                        class="text-accent-gold text-xs uppercase font-bold tracking-widest flex items-center gap-1 drop-shadow-[0_0_5px_rgba(212,175,55,0.6)]">
+                                        <span class="material-symbols-outlined text-[16px]">redeem</span> Frete Grátis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex-1 flex flex-col gap-3">
+                                <a class="w-full py-4 md:py-5 px-6 md:px-8 rounded-xl btn-gold-satin text-black font-black text-sm md:text-base uppercase tracking-widest hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 border border-white/20"
+                                    href="https://entrega.logzz.com.br/pay/memg2d087/duas-oferta-especial">
+                                    QUERO MEU KIT
+                                </a>
+                                <p
+                                    class="text-slate-400 text-[10px] text-center uppercase tracking-wider flex items-center justify-center gap-1">
+                                    <span
+                                        class="material-symbols-outlined text-[14px] text-cta-green drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">lock</span>
+                                    Compra 100% Segura</p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full glass-card p-6 md:p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 border-purple-hairline hover:border-primary/50 transition-colors bg-gradient-to-br from-primary/5 to-transparent relative mt-4">
+                            <div
+                                class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest shadow-lg whitespace-nowrap">
+                                Oferta de Entrada</div>
+                            <div class="flex flex-col gap-1 flex-1 pt-4 md:pt-0">
+                                <h3 class="text-white font-bold uppercase tracking-[0.1em] text-xl">Kit Básico</h3>
+                                <p class="text-slate-400 text-xs md:text-sm uppercase tracking-widest font-medium mb-1">
+                                    1 Unidade</p>
+                                <div class="text-4xl font-bold text-slate-100 my-1">R$ 129</div>
+                                <p class="text-slate-500 text-xs font-medium mb-2">ou 12x de R$ 12,95</p>
+                                <div
+                                    class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3">
+                                    <p
+                                        class="text-slate-300 text-[10px] uppercase font-bold tracking-widest flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-[14px]">local_shipping</span> Pague
+                                        na Entrega</p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex-1 flex flex-col gap-3">
+                                <a class="w-full py-4 px-8 rounded-xl btn-gold-satin text-black font-bold uppercase text-xs md:text-sm tracking-widest transition-transform hover:scale-105 active:scale-95 flex items-center justify-center"
+                                    href="https://entrega.logzz.com.br/pay/memg2d087/vrcju-preco-normal">QUERO 1
+                                    UNIDADE</a>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full glass-card p-6 md:p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 border-purple-hairline hover:border-primary/50 transition-colors bg-gradient-to-br from-primary/5 to-transparent relative mt-4">
+                            <div
+                                class="absolute -top-4 right-4 md:right-8 bg-red-600 text-white text-[10px] font-black px-3 py-1.5 rounded-md uppercase tracking-wider shadow-lg transform rotate-3 border border-red-400 z-10">
+                                ECONOMIZE R$ 187</div>
+                            <div class="flex flex-col gap-1 flex-1">
+                                <h3 class="text-white font-bold uppercase tracking-[0.1em] text-xl">Kit Família</h3>
+                                <p class="text-slate-400 text-xs md:text-sm uppercase tracking-widest font-medium mb-1">
+                                    3 Unidades</p>
+                                <div class="text-4xl font-bold text-slate-100 my-1">R$ 200</div>
+                                <p class="text-slate-500 text-xs font-medium mb-2">ou 12x de R$ 20,08</p>
+                                <div
+                                    class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3">
+                                    <p
+                                        class="text-slate-300 text-[10px] uppercase font-bold tracking-widest flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-[14px]">local_shipping</span> Pague
+                                        na Entrega</p>
+                                    <p
+                                        class="text-slate-300 text-[10px] uppercase font-bold tracking-widest flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-[14px]">redeem</span> Frete Grátis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto flex-1 flex flex-col gap-3">
+                                <a class="w-full py-4 px-8 rounded-xl btn-gold-satin text-black font-bold uppercase text-xs md:text-sm tracking-widest transition-transform hover:scale-105 active:scale-95 flex items-center justify-center"
+                                    href="https://entrega.logzz.com.br/pay/memg2d087/3-menor-preco">QUERO 3 UNIDADES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black border-t border-white/10 py-12 px-6 flex flex-col items-center text-center gap-6">
+            <div class="flex items-center gap-6 mb-2">
+                <span
+                    class="material-symbols-outlined text-slate-600 text-3xl hover:text-slate-400 transition-colors">lock</span>
+                <span
+                    class="material-symbols-outlined text-slate-600 text-3xl hover:text-slate-400 transition-colors">verified_user</span>
+                <span
+                    class="material-symbols-outlined text-slate-600 text-3xl hover:text-slate-400 transition-colors">payment</span>
             </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-2">
-            <span>Como uso a temperatura certa?</span>
-            <span class="faq-item__icon">+</span>
-          </button>
-          <div class="faq-item__answer">
-            <div class="faq-item__answer-inner">
-              Após ligar na energia, aperte o botão '+ / -' para ajustar do baixo (fios finos)
-              até o alto (fios mais crespinhos e grossos). Ela aquece em alguns minutos.
+            <h2 class="text-slate-400 text-xs md:text-sm font-bold uppercase tracking-[0.2em]">Escova Alisadora Premium
+            </h2>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <a class="text-slate-600 hover:text-accent-gold transition-colors text-[10px] md:text-xs uppercase font-bold tracking-widest"
+                    href="#">Privacidade</a>
+                <a class="text-slate-600 hover:text-accent-gold transition-colors text-[10px] md:text-xs uppercase font-bold tracking-widest"
+                    href="#">Termos de Uso</a>
+                <a class="text-slate-600 hover:text-accent-gold transition-colors text-[10px] md:text-xs uppercase font-bold tracking-widest"
+                    href="#">Trocas e Devoluções</a>
             </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-3">
-            <span>Tem possibilidade de machucar o couro cabeludo?</span>
-            <span class="faq-item__icon">+</span>
-          </button>
-          <div class="faq-item__answer">
-            <div class="faq-item__answer-inner">
-              Absolutamente nenhuma. A parte do aquecimento total fica inteiramente por dentro.
-              Já a área externa que pode encostar em você na hora do uso, se mantém na temperatura normal.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-4">
-            <span>Como funciona o pagamento? É só na entrega mesmo?</span>
-            <span class="faq-item__icon">+</span>
-          </button>
-          <div class="faq-item__answer">
-            <div class="faq-item__answer-inner">
-              Sim! A forma mais segura possível. Você faz o pedido em nosso site (cadastro do endereço e afins),
-              o seu pedido é despachado, e aí você só efetua o pagamento depois que recebê-lo em casa na mão
-              do entregador através de Cartão, Pix ou Dinheiro.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false" id="faq-5">
-            <span>Tem garantia e caso estragar?</span>
-            <span class="faq-item__icon">+</span>
-          </button>
-          <div class="faq-item__answer">
-            <div class="faq-item__answer-inner">
-              Você tem o total de 7 dias depois do momento de recebimento de teste,
-              assim você pode exercer sua opção simples de reembolso / troca previstos à sua total segurança.
-            </div>
-          </div>
-        </div>
-      </div>
+            <p class="text-slate-700 text-[10px] max-w-lg mt-4 leading-relaxed">Os resultados podem variar de pessoa
+                para pessoa. Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você
+                sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+            <p class="text-slate-700 text-[9px] md:text-[10px] uppercase tracking-[0.1em] mt-2">© 2024. Todos os
+                direitos reservados.</p>
+        </footer>
     </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 14 — CTA Final
-       ============================ -->
-  <section class="final-cta-section section-padding" id="final-cta">
-    <div class="container">
-      <h2 class="reveal">Chega de lutar horas a fio em cima do cabelo</h2>
-      <p class="reveal">
-        Nunca foi tão simples possuir fios lindos, macios e livres daquele cheiro artificial de esfumaçamento.
-        <br><br>
-        Comece já a usufruir de liso natural espelhado de salão, garantindo seu próprio auto-cuidado, sem machucar o
-        próprio
-        rosto em risco ou esquentando muito além de forma perigosa. Com nosso pagamento somente ao chegar até sua casa e
-        o
-        bônus temporário de zero custo com frete, está na hora!
-      </p>
-      <div class="final-cta__price reveal">
-        <span class="price-old">De R$ 197,00</span>
-        <span class="price-current price-current--white">A partir de <span class="price-currency">R$</span>
-          <span class="price-value">97,00</span></span>
-        <span class="price-saving">🔥 Bônus especial agora!</span>
-      </div>
-      <a href="#pricing-section" class="cta-btn cta-btn--pulse reveal" id="cta-final">
-        SELECIONAR SEU KIT →
-      </a>
-      <div class="cta-microcopy cta-microcopy--light" style="margin-top: 12px;">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
-        </svg>
-        <span>Você só paga quando receber em casa</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       SEÇÃO 15 — Rodapé
-       ============================ -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <p>© 2026 Escovas Alisadoras Brasil — Todos os direitos reservados.</p>
-      <p>Este site não é afiliado ao Facebook™ ou Google™. Os resultados podem variar ao tipo respectivo dos fios. Total
-        em normas.</p>
-      <div class="footer__links">
-        <a href="#" id="link-privacy" target="_blank">Política de Privacidade</a>
-        <a href="#" id="link-terms" target="_blank">Termos de Uso</a>
-        <a href="#" id="link-contact" target="_blank">Fale Conosco</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ============================
-       Assistente Virtual (Chatbot)
-       ============================ -->
-  <button class="chatbot-float" id="chatbot-toggle" aria-label="Falar com o Assistente Virtual"
-    onclick="toggleChatbot()">
-    <span class="chatbot-float__icon" id="chatbot-icon">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z"
-          fill="white" />
-        <circle cx="8" cy="11" r="1.2" fill="#D81B60" />
-        <circle cx="12" cy="11" r="1.2" fill="#D81B60" />
-        <circle cx="16" cy="11" r="1.2" fill="#D81B60" />
-      </svg>
-    </span>
-    <span class="chatbot-float__badge" id="chatbot-badge">1</span>
-  </button>
-
-  <div class="chatbot-window" id="chatbot-window">
-    <div class="chatbot-header">
-      <div class="chatbot-header__info">
-        <div class="chatbot-header__avatar" style="background:var(--color-primary-light);">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z"
-              fill="white" />
-          </svg>
-        </div>
-        <div>
-          <span class="chatbot-header__name">Consultora Julia</span>
-          <span class="chatbot-header__status">🟢 Online agora</span>
-        </div>
-      </div>
-      <button class="chatbot-header__close" onclick="toggleChatbot()" aria-label="Fechar chat">&times;</button>
-    </div>
-
-    <div class="chatbot-messages" id="chatbot-messages">
-    </div>
-
-    <div class="chatbot-suggestions" id="chatbot-suggestions">
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Funciona mesmo?')">🪮 Funciona mesmo?</button>
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Como funciona o pagamento?')">💳
-        Pagamento</button>
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Tem frete grátis?')">🚚 Frete</button>
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Serve no cabelo crespo?')">✨ Tipos de
-        Fios?</button>
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Qual é a garantia?')">🛡️ Garantia</button>
-      <button class="chatbot-suggestion-btn" onclick="sendSuggestion('Quero comprar')">🛒 Comprar agora</button>
-    </div>
-
-    <div class="chatbot-input-area">
-      <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Digite sua dúvida..." autocomplete="off"
-        onkeydown="if(event.key==='Enter')sendMessage()">
-      <button class="chatbot-send-btn" id="chatbot-send" onclick="sendMessage()" aria-label="Enviar mensagem">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="white" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- ============================
-       JavaScript (Do template da Joelheira)
-       ============================ -->
-  <script>
-    // ─── FAQ Accordion ───
-    function toggleFaq(btn) {
-      const item = btn.closest('.faq-item');
-      const isActive = item.classList.contains('active');
-
-      // Close all
-      document.querySelectorAll('.faq-item.active').forEach(el => {
-        el.classList.remove('active');
-        el.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
-      });
-
-      // Toggle current
-      if (!isActive) {
-        item.classList.add('active');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    }
-
-    // ─── Lightbox ───
-    function openLightbox(el) {
-      const img = el.querySelector('img');
-      if (!img) return;
-
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox(event) {
-      if (event.target === event.currentTarget || event.target.closest('.lightbox__close')) {
-        document.getElementById('lightbox').classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    }
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        const lightbox = document.getElementById('lightbox');
-        if (lightbox) {
-          lightbox.classList.remove('active');
-          document.body.style.overflow = '';
-        }
-      }
-    });
-
-    // ─── Scroll Reveal Animations ───
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          // Não adicionar 'active' nos .faq-item (conflita com o accordion)
-          if (!entry.target.classList.contains('faq-item')) {
-            entry.target.classList.add('active');
-          }
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    document.querySelectorAll('.reveal').forEach(el => {
-      revealObserver.observe(el);
-    });
-
-    // ─── Smooth scroll for anchor links ───
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // ─── Contador dinâmico de visitantes ───
-    function updateViewers() {
-      const el = document.getElementById('hero-viewers');
-      if (el) {
-        const n = Math.floor(Math.random() * (59 - 32) + 32);
-        el.innerText = n + ' pessoas est\u00e3o vendo este produto agora';
-      }
-    }
-    updateViewers();
-    setInterval(updateViewers, 5000);
-
-    // ═══════════════════════════════════════════════════
-    //  ASSISTENTE VIRTUAL — CHATBOT (NOVO DA ESCOVA)
-    // ═══════════════════════════════════════════════════
-    const chatbotState = {
-      isOpen: false,
-      hasGreeted: false,
-      typingTimer: null
-    };
-
-    const UI = {
-      get window() { return document.getElementById('chatbot-window') },
-      get badge() { return document.getElementById('chatbot-badge') },
-      get toggleIcon() { return document.getElementById('chatbot-icon') },
-      get messages() { return document.getElementById('chatbot-messages') },
-      get input() { return document.getElementById('chatbot-input') },
-      get suggestions() { return document.getElementById('chatbot-suggestions') }
-    };
-
-    const KB = [
-      { words: ['frete', 'entrega', 'envio'], reply: 'O nosso <strong>frete é grátis</strong> por tempo restrito para o país inteiro!' },
-      { words: ['pagamento', 'pagar', 'cartao', 'pix'], reply: 'Você só pagará depois que receber e pode pagar em via Pix, Cartão de Crédito e no Dinheiro. 😉' },
-      { words: ['crespo', 'fino', 'cacheado'], reply: 'Ela é extremamente versátil para qualquer textura — você não tem problemas desde cabelos mais delicados a difíceis de alisamento.' },
-      { words: ['garantia', 'n funciona'], reply: 'Aqui você está completamente protegida e temos total de 7 dias com nosso sistema formal 100% regulamentado sem chateações na troca e reembolso' },
-      { words: ['comprar', 'onde', 'kit'], reply: 'Dá só uma olhadinha nesse botão ao lado (ou no topo) que ele te mandará para o local super simples dos Kits disponíveis!' }
-    ];
-
-    function toggleChatbot() {
-      chatbotState.isOpen = !chatbotState.isOpen;
-
-      if (chatbotState.isOpen) {
-        UI.window.classList.add('active');
-        if (UI.badge) UI.badge.style.display = 'none';
-
-        // Switch icon to close
-        if (UI.toggleIcon) {
-          UI.toggleIcon.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="white"/></svg>';
-        }
-
-        if (!chatbotState.hasGreeted) {
-          chatbotState.hasGreeted = true;
-          showTyping();
-          setTimeout(() => {
-            removeTyping();
-            appendMessage('Olá maravilha! ✨ Sou conselheira assistente, por incrível que pareça eu sou real a nível de resposta rsrs. <br><br>Gostaria de algo no particular, em específico a forma de pagar e o bônus de entrega?', 'bot');
-          }, 1200);
-        }
-      } else {
-        UI.window.classList.remove('active');
-        // Switch back to chat icon
-        if (UI.toggleIcon) {
-          UI.toggleIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C6.48 2 2 6.04 2 11c0 2.59 1.2 4.93 3.09 6.55L4 22l4.34-1.55C9.5 20.82 10.73 21 12 21c5.52 0 10-4.04 10-9S17.52 2 12 2z" fill="white" />
-                    <circle cx="8" cy="11" r="1.2" fill="#D81B60" />
-                    <circle cx="12" cy="11" r="1.2" fill="#D81B60" />
-                    <circle cx="16" cy="11" r="1.2" fill="#D81B60" />
-                    </svg>`;
-        }
-      }
-    }
-
-    function appendMessage(text, sender) {
-      const wrap = document.createElement('div');
-      wrap.className = `chatbot-msg chatbot-msg--${sender}`;
-
-      const bubble = document.createElement('div');
-      bubble.className = 'chatbot-msg__bubble';
-      bubble.innerHTML = text;
-
-      wrap.appendChild(bubble);
-      UI.messages.appendChild(wrap);
-      scrollToBottom();
-    }
-
-    function showTyping() {
-      if (document.getElementById('chatbot-typing')) return;
-
-      const wrap = document.createElement('div');
-      wrap.className = 'chatbot-msg chatbot-msg--bot';
-      wrap.id = 'chatbot-typing';
-
-      const bubble = document.createElement('div');
-      bubble.className = 'chatbot-msg__bubble chatbot-msg__bubble--typing';
-      bubble.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
-
-      wrap.appendChild(bubble);
-      UI.messages.appendChild(wrap);
-      scrollToBottom();
-    }
-
-    function removeTyping() {
-      const el = document.getElementById('chatbot-typing');
-      if (el) el.remove();
-    }
-
-    function scrollToBottom() {
-      if (UI.messages) UI.messages.scrollTop = UI.messages.scrollHeight;
-    }
-
-    function getBotResponse(input) {
-      const text = input.toLowerCase().trim();
-      for (let item of KB) {
-        if (item.words.some(word => text.includes(word))) {
-          return item.reply;
-        }
-      }
-      return "Ah muito bem observada o detalhe. Em geral indicamos ver as ofertas aqui nos pacotes na página mesmo. Aproveite a política de Pague Quando Receber!";
-    }
-
-    function processUserInput(text) {
-      if (!text.trim()) return;
-
-      appendMessage(text, 'user');
-      if (UI.input) UI.input.value = '';
-
-      showTyping();
-
-      const delay = Math.random() * 1000 + 800; // 800-1800ms
-      clearTimeout(chatbotState.typingTimer);
-      chatbotState.typingTimer = setTimeout(() => {
-        removeTyping();
-        const reply = getBotResponse(text);
-        appendMessage(reply, 'bot');
-      }, delay);
-    }
-
-    function sendMessage() {
-      if (UI.input) processUserInput(UI.input.value);
-    }
-
-    function sendSuggestion(text) {
-      if (!chatbotState.hasGreeted) {
-        chatbotState.hasGreeted = true;
-      }
-      processUserInput(text);
-    }
-
-    setTimeout(() => {
-      if (!chatbotState.isOpen && UI.badge) {
-        UI.badge.style.display = 'flex';
-        UI.badge.style.animation = 'pulse-glow 2s infinite';
-      }
-    }, 5000);
-
-
-    // ═══════════════════════════════════════════════════
-    //  VSLs — Lazy Load Facade
-    // ═══════════════════════════════════════════════════
-    function loadVSL(container) {
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube.com/embed/rIxBw_inwuM?autoplay=1&rel=0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      iframe.allowFullscreen = true;
-      container.innerHTML = '';
-      container.appendChild(iframe);
-      container.style.cursor = 'default';
-    }
-
-    function loadDepoimento(container) {
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube.com/embed/lYjCuQ48pvM?autoplay=1&rel=0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      iframe.allowFullscreen = true;
-      container.innerHTML = '';
-      container.appendChild(iframe);
-      container.style.cursor = 'default';
-    }
-
-    function loadDemo(container) {
-      const iframe = document.createElement('iframe');
-      // Como não temos a URL específica, uso um genérico ou a do VSL. Aqui mantemos estrutura.
-      iframe.src = 'https://www.youtube.com/embed/rIxBw_inwuM?autoplay=1&rel=0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      iframe.allowFullscreen = true;
-      container.innerHTML = '';
-      container.appendChild(iframe);
-      container.style.cursor = 'default';
-    }
-
-
-    // ═══════════════════════════════════════════════════
-    //  CRO — Sticky CTA Mobile
-    // ═══════════════════════════════════════════════════
-    const stickyCta = document.getElementById('sticky-cta-mobile');
-    if (stickyCta) {
-      window.addEventListener('scroll', function () {
-        const heroBottom = document.getElementById('hero') ?
-          document.getElementById('hero').getBoundingClientRect().bottom : 0;
-        if (heroBottom < -100) {
-          stickyCta.classList.add('visible');
-        } else {
-          stickyCta.classList.remove('visible');
-        }
-      }, { passive: true });
-    }
-
-    // ═══════════════════════════════════════════════════
-    //  CRO — Barra de Progresso de Leitura Baseada em Scroll
-    // ═══════════════════════════════════════════════════
-    window.addEventListener('scroll', function () {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (scrollTop / docHeight) * 100;
-      const sp = document.getElementById('scroll-progress');
-      if (sp) sp.style.width = progress + '%';
-    }, { passive: true });
-
-  </script>
-
-  <!-- Sticky CTA Mobile -->
-  <div class="sticky-cta-mobile" id="sticky-cta-mobile">
-    <div class="sticky-cta-mobile__price">
-      <small>De R$ 197,00</small>
-      R$ 97,00
-    </div>
-    <a href="#pricing-section" class="sticky-cta-mobile__btn">
-      VER OFERTAS →
-    </a>
-  </div>
-
-
-
 </body>
 
 </html>
