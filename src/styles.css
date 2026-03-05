@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #9b30ff;
+    --color-background-light: #f8f5f7;
+    --color-background-dark: #0a0a0a;
+    --color-background-darker: #050505;
+    --color-accent-gold: #d4af37;
+    --color-soft-purple: #2d1b4d;
+    --color-cta-green: #10b981;
+    --color-cta-green-hover: #059669;
+    --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer components {
+    .glass-luxury {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 0.5px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+    }
+
+    .border-gold-hairline {
+        border: 0.5px solid rgba(212, 175, 55, 0.4);
+    }
+
+    .border-purple-hairline {
+        border: 0.5px solid rgba(155, 48, 255, 0.4);
+    }
+
+    .btn-gold-satin {
+        background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #b8860b 100%);
+        color: #000;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-purple-satin {
+        background: linear-gradient(135deg, #9b30ff 0%, #c17fff 100%);
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(155, 48, 255, 0.4);
+    }
+
+    .btn-green-satin {
+        background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #059669 100%);
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    }
+
+    .text-gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #b8860b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .text-purple-gradient {
+        background: linear-gradient(135deg, #9b30ff 0%, #c17fff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .placeholder-box {
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        background: rgba(155, 48, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .section-spacing {
+        @apply py-12 md:py-16;
+    }
+
+    .container-max {
+        @apply max-w-[1200px] mx-auto px-6 md:px-8;
+    }
+
+    body {
+        @apply leading-[1.6];
+    }
+
+    p {
+        @apply max-w-[70ch] mx-auto md:mx-0;
+    }
+
+    .section-title {
+        @apply text-slate-100 text-2xl md:text-4xl font-bold uppercase tracking-wider text-center mb-8 md:mb-10;
+    }
+
+    .section-divider {
+        @apply h-[2px] w-16 bg-accent-gold mx-auto mt-4 mb-8;
+    }
+}
