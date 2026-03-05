@@ -9,7 +9,8 @@
     --color-soft-purple: #2d1b4d;
     --color-cta-green: #10b981;
     --color-cta-green-hover: #059669;
-    --font-display: "Space Grotesk", sans-serif;
+
+    --font-family-display: "Space Grotesk", sans-serif;
 }
 
 @layer components {
