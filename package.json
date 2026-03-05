@@ -1,8 +1,14 @@
 {
-    "name": "static-html-site",
+    "name": "escova-alisadora",
     "version": "1.0.0",
-    "description": "Static HTML project for Hostinger",
+    "description": "Projeto landing page escova alisadora",
+    "main": "index.html",
     "scripts": {
-        "build": "echo 'No build step required for static HTML'"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^5.0.0"
     }
 }
