@@ -1,0 +1,8 @@
+{
+    "name": "static-html-site",
+    "version": "1.0.0",
+    "description": "Static HTML project for Hostinger",
+    "scripts": {
+        "build": "echo 'No build step required for static HTML'"
+    }
+}
