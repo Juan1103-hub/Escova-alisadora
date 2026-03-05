@@ -1,6 +1,6 @@
 /* ========================================
-   JOELHEIRA ORTOPÉDICA PREMIUM — LANDING PAGE
-   Design: Mobile-first, urgente, saúde/confiança
+   ESCOVA ALISADORA 3 EM 1 — LANDING PAGE
+   Design: Elegante, feminino, alta conversão (Rose Gold)
    ======================================== */
 
 /* ─── Google Fonts ─── */
@@ -278,7 +278,7 @@ body {
     min-height: 85vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(160deg, #0F2027 0%, #1A1A2E 50%, #16213E 100%);
+    background: linear-gradient(160deg, #FFF0F5 0%, #FFE4E1 50%, #F8BBD0 100%);
     overflow: hidden;
 }
 
@@ -461,7 +461,7 @@ body {
 
 .hero__headline {
     font-size: clamp(2rem, 6.5vw, 3.5rem);
-    color: #FFFFFF;
+    color: #2D2D2D;
     font-weight: 900;
     max-width: 900px;
     line-height: 1.15;
@@ -474,9 +474,9 @@ body {
 
 .hero__subheadline {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
-    color: rgba(255, 255, 255, 0.8);
+    color: #5A5A5A;
     max-width: 650px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     text-wrap: pretty;
 }
@@ -493,8 +493,9 @@ body {
     display: flex;
     align-items: flex-start;
     gap: var(--space-sm);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1rem;
+    color: #2D2D2D;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .hero__bullets li .bullet-icon {
@@ -523,7 +524,7 @@ body {
 
 .price-old {
     font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(45, 45, 45, 0.6);
     text-decoration: line-through;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -580,7 +581,7 @@ body {
 }
 
 .hero .trust-line {
-    color: rgba(255, 255, 255, 0.65);
+    color: #5A5A5A;
 }
 
 /* ========================================
@@ -732,12 +733,12 @@ body {
    SEÇÃO 5 — Tecnologia e Materiais
    ======================================== */
 .tech-section {
-    background: linear-gradient(160deg, #0F2027, #1A1A2E, #16213E);
-    color: #FFFFFF;
+    background: linear-gradient(160deg, #FCE4EC, #F8BBD0, #F48FB1);
+    color: #2D2D2D;
 }
 
 .tech-section .section-title {
-    color: #FFFFFF;
+    color: #2D2D2D;
 }
 
 .tech-section .section-title::after {
@@ -759,8 +760,8 @@ body {
 }
 
 .tech-card {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     text-align: center;
@@ -772,10 +773,10 @@ body {
 }
 
 .tech-card:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.7);
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    border-color: rgba(240, 98, 146, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-color: rgba(216, 27, 96, 0.4);
 }
 
 /* Linha brilhante no topo do card ao hover */
